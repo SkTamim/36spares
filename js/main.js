@@ -258,10 +258,193 @@
                 xhr = $.ajax({
                     url: 'quickview.html',
                     success: function(data) {
+
+                        // DUMMY STATIC DATA FOR MODAL. IT WILL REPLACE BY BACKEND. 
+                        let myData = `
+                        <div class="quickview">
+                        <button class="quickview__close" type="button">
+                            <svg width="20px" height="20px">
+                                <use xlink:href="images/sprite.svg#cross-20"></use>
+                            </svg>
+                        </button>
+                        <div class="product product--layout--quickview" data-layout="quickview">
+                            <div class="product__content">
+                                <!-- .product__gallery -->
+                                <div class="product__gallery">
+                                    <div class="product-gallery">
+                                        <div class="product-gallery__featured">
+                                            <button class="product-gallery__zoom">
+                                                <svg width="24px" height="24px">
+                                                    <use xlink:href="images/sprite.svg#zoom-in-24"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="owl-carousel" id="product-image">
+                                                <div class="product-image product-image--location--gallery">
+                                                    <!--
+                                                    The data-width and data-height attributes must contain the size of a larger version
+                                                    of the product image.
+                    
+                                                    If you do not know the image size, you can remove the data-width and data-height
+                                                    attribute, in which case the width and height will be obtained from the naturalWidth
+                                                    and naturalHeight property of img.product-image__img.
+                                                    -->
+                                                    <a href="images/products/product-jcb.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank">
+                                                        <img class="product-image__img" src="images/products/product-jcb.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-image product-image--location--gallery">
+                                                    <!--
+                                                    The data-width and data-height attributes must contain the size of a larger version
+                                                    of the product image.
+                    
+                                                    If you do not know the image size, you can remove the data-width and data-height
+                                                    attribute, in which case the width and height will be obtained from the naturalWidth
+                                                    and naturalHeight property of img.product-image__img.
+                                                    -->
+                                                    <a href="images/products/product-jcb.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank">
+                                                        <img class="product-image__img" src="images/products/product-jcb.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-image product-image--location--gallery">
+                                                    <!--
+                                                    The data-width and data-height attributes must contain the size of a larger version
+                                                    of the product image.
+                    
+                                                    If you do not know the image size, you can remove the data-width and data-height
+                                                    attribute, in which case the width and height will be obtained from the naturalWidth
+                                                    and naturalHeight property of img.product-image__img.
+                                                    -->
+                                                    <a href="images/products/product-jcb.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank">
+                                                        <img class="product-image__img" src="images/products/product-jcb.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-image product-image--location--gallery">
+                                                    <!--
+                                                    The data-width and data-height attributes must contain the size of a larger version
+                                                    of the product image.
+                    
+                                                    If you do not know the image size, you can remove the data-width and data-height
+                                                    attribute, in which case the width and height will be obtained from the naturalWidth
+                                                    and naturalHeight property of img.product-image__img.
+                                                    -->
+                                                    <a href="images/products/product-jcb.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank">
+                                                        <img class="product-image__img" src="images/products/product-jcb.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-image product-image--location--gallery">
+                                                    <!--
+                                                    The data-width and data-height attributes must contain the size of a larger version
+                                                    of the product image.
+                    
+                                                    If you do not know the image size, you can remove the data-width and data-height
+                                                    attribute, in which case the width and height will be obtained from the naturalWidth
+                                                    and naturalHeight property of img.product-image__img.
+                                                    -->
+                                                    <a href="images/products/product-jcb.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank">
+                                                        <img class="product-image__img" src="images/products/product-jcb.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-gallery__carousel">
+                                            <div class="owl-carousel" id="product-carousel">
+                                                <a href="images/products/product-jcb.jpg" class="product-image product-gallery__carousel-item">
+                                                    <div class="product-image__body">
+                                                        <img class="product-image__img product-gallery__carousel-image" src="images/products/product-jcb.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="images/products/product-jcb.jpg" class="product-image product-gallery__carousel-item">
+                                                    <div class="product-image__body">
+                                                        <img class="product-image__img product-gallery__carousel-image" src="images/products/product-jcb.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="images/products/product-jcb.jpg" class="product-image product-gallery__carousel-item">
+                                                    <div class="product-image__body">
+                                                        <img class="product-image__img product-gallery__carousel-image" src="images/products/product-jcb.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="images/products/product-jcb.jpg" class="product-image product-gallery__carousel-item">
+                                                    <div class="product-image__body">
+                                                        <img class="product-image__img product-gallery__carousel-image" src="images/products/product-jcb.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="images/products/product-jcb.jpg" class="product-image product-gallery__carousel-item">
+                                                    <div class="product-image__body">
+                                                        <img class="product-image__img product-gallery__carousel-image" src="images/products/product-jcb.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .product__gallery / end -->
+                                <!-- .product__info -->
+                                <div class="product__info">
+                                    <div class="product__wishlist-compare">
+                                        <button type="button" class="btn btn-sm btn-light btn-svg-icon" data-toggle="tooltip" data-placement="right" title="Wishlist">
+                                            <svg width="16px" height="16px">
+                                                <use xlink:href="images/sprite.svg#wishlist-16"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-light btn-svg-icon" data-toggle="tooltip" data-placement="right" title="Compare">
+                                            <svg width="16px" height="16px">
+                                                <use xlink:href="images/sprite.svg#compare-16"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <h1 class="product__name mb-0">Poker Vibrator</h1>
+                                    <p class="text-muted text-14">Manufacturer/Model No: VAF-60LT 5MT</p>
+                                  
+                                    <ul class="product__features d-block">
+                                        <li>Part No:</li>
+                                        <li>Alternate Part No:</li>
+                                        <li class="d-flex align-items-center">Custom Label: <div class="label-color ml-2" style="width: 15px; height: 10px; background-color: #ff0000;"></div></li>
+                                        <li>SKU: 59679f72-6631-4a3e-8946-a1cd6b729b1d</li>
+                                    </ul>
+                                    <ul class="product__meta">
+                                        <li class="product__meta-availability">Availability: <span class="text-success">In Stock</span></li>
+                                        <li>Brand: <a href="#">Euro Shatal</a></li>
+                                    </ul>
+                                </div>
+                                <!-- .product__info / end -->
+                                <!-- .product__sidebar -->
+                                <div class="product__sidebar">
+                                    <div class="product__availability">
+                                        Availability: <span class="text-success">In Stock</span>
+                                    </div>
+                                    <div class="product__prices">
+                                        ₹8,499
+                                    </div>
+                                    <!-- .product__options -->
+                                    <form class="product__options">
+                                        <div class="form-group product__option">
+                                            <label class="product__option-label" for="product-quantity">Quantity</label>
+                                            <div class="product__actions">
+                                                <div class="product__actions-item">
+                                                    <div class="input-number product__quantity">
+                                                        <input id="product-quantity" class="input-number__input form-control form-control-lg" type="number" min="1" value="1">
+                                                        <div class="input-number__add"></div>
+                                                        <div class="input-number__sub"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="product__actions-item product__actions-item--addtocart">
+                                                    <button class="btn btn-primary btn-lg">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- .product__options / end -->
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>`
+
                         quickview.cancelPreviousModal = function() {};
                         button.removeClass('product-card__quickview--preload');
+                        console.log(data);
 
-                        modal.find('.modal-content').html(data);
+                        modal.find('.modal-content').html(myData);
                         modal.find('.quickview__close').on('click', function() {
                             modal.modal('hide');
                         });
