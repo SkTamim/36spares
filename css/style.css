@@ -9186,6 +9186,19 @@ transform: scale(1.05);
     display: none;
   }
 }
+
+@media screen and (max-width:768px) {
+  [dir=ltr] .cart-table__column--price::before, [dir=ltr] .cart-table__column--quantity::before, [dir=ltr] .cart-table__column--total::before{
+    text-align: start;
+  }
+}
+@media screen and (max-width:435px) {
+ .cart__coupon-form .btn.btn-primary{
+  padding: 8px;
+  font-size: 14px;
+ }
+}
+
 /*
 // .category-card
 */
