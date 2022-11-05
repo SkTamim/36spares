@@ -1068,3 +1068,25 @@
         }, passiveSupported ? {passive: true} : false);
     });
 })(jQuery);
+
+
+// OTP tab chenge
+const otpFiels = document.querySelectorAll(".otp-field");
+
+if (otpFiels) {
+	otpFiels.forEach((el, index) => {
+
+		el.addEventListener("input", () => {
+			if (index !== 4) {
+				if (el.value !== "") {
+					el.nextElementSibling.focus();
+				}
+			}
+			if (index !== 0) {
+				if (el.value.length === 0) {
+					el.previousElementSibling.focus();
+				}
+			}
+		});
+	});
+}

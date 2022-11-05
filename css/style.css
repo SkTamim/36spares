@@ -16465,3 +16465,13 @@ transform: scale(1.03);
 .text-14{
   font-size: 14px;
 }
+
+/* OTP  */
+.otp-group{
+  display: flex;
+  justify-content: space-around;
+}
+.otp-field{
+  width: 50px;
+  text-align: center;
+}
