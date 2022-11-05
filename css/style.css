@@ -8101,9 +8101,9 @@ transform: scale(1.05);
 // .about-us
 */
 .about-us__image {
-  background-image: url("../images/aboutus.jpg");
+  background-image: url("../images/banners/about-us-banner.jpg");
   background-size: cover;
-  background-position: bottom center;
+  background-position: center center;
   height: 500px;
 }
 
@@ -15846,6 +15846,14 @@ transform: scale(1.03);
 .widget-aboutus__socials {
   display: block;
   margin-top: 20px;
+}
+.check-list{
+  list-style: none;
+  padding: 20px 0;
+}
+.check-list li{
+  margin: 10px 0;
+  font-size: 17px;
 }
 
 /*
