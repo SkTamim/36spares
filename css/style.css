@@ -6968,8 +6968,8 @@ transform: scale(1.05);
 .product-card .product-brand::before{
  display: none;
 }
-.products-list[data-layout^=grid-] .product-card .product-card__actions{
-  margin-left: 0 !important;
+.products-list[data-layout="list"] .product-card .product-card__actions{
+  margin-left: auto;
 }
 
 /*
@@ -16461,4 +16461,7 @@ transform: scale(1.03);
 
 .fw-500{
   font-weight: 500;
+}
+.text-14{
+  font-size: 14px;
 }
