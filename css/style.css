@@ -10891,6 +10891,12 @@ transform: scale(1.03);
     padding: 24px;
   }
 }
+
+@media screen and (max-width:400px) {
+  .product__actions-item .btn-primary{
+    padding: 6px 14px;
+  }
+}
 /*
 // .products-list
 */
