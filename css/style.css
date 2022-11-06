@@ -6980,6 +6980,21 @@ transform: scale(1.05);
   margin-left: auto;
 }
 
+@media screen and (max-width:767px) {
+  .products-list[data-layout="list"] .product-card .product-card__actions{
+    margin-left: 0;
+  }
+  [dir=ltr] .products-list[data-layout=list] .product-card .product-card__addtocart--list{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width:400px) {
+  .product-card__buttons .product-card__addtocart--list{
+    padding: 6px 14px !important;
+    font-size: 14px !important;
+  }
+}
+
 /*
 // .search--location--mobile-header
 */
