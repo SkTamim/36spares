@@ -2523,7 +2523,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 
 .post-card__category {
   font-size: 14px;
-  color: #adadad;
+  color: #333;
+  padding: 0 6px;
+  margin: 0 8px;
+  background-color: #ffd33378;
+  transition: .2s;
+}
+.post-card__category:hover{
+  background-color: #ffd333d4;
 }
 .post-card__category a {
   color: inherit;
@@ -2531,7 +2538,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   transition: 0.15s;
 }
 .post-card__category a:hover {
-  color: #1a66ff;
+  color: #333;
+
 }
 
 .post-card__date {
@@ -2598,7 +2606,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   margin-bottom: 14px;
 }
 .post-card--layout--grid .post-card__category {
-  display: none;
+  /* display: none; */
 }
 .post-card--layout--grid .post-card__date {
   -webkit-box-ordinal-group: 0;
