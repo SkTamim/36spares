@@ -1090,3 +1090,13 @@ if (otpFiels) {
 		});
 	});
 }
+
+// CUSTOM UPLOAD 
+const upload = document.querySelectorAll('.custom-upload')
+
+upload.forEach(item =>{
+    item.addEventListener('click',()=>{
+        let input = item.querySelector('input')
+        input.click()
+    })
+})

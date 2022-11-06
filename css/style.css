@@ -16508,3 +16508,34 @@ transform: scale(1.03);
   align-items: center;
   justify-content: center;
 }
+
+.btn-forsed{
+  border-color: #ffd333 !important;
+  background: #ffd333 !important;
+  color: #3d464d !important;
+  fill: #3d464d !important;
+}
+.radious-50{
+  border-radius: 50px;
+}
+
+.styled-input{
+  border:1.5px solid #ffd333;
+}
+.styled-input:focus{
+  border:1.5px solid #ffd333;
+  box-shadow: 0 0 0 0.2rem rgb(255 211 51 / 60%);
+}
+
+.custom-upload{
+  border: 1.5px dashed #737373;
+  border-radius: 3px;
+  color: #737373;
+  padding: 8px 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.custom-upload input{
+display: none;
+}

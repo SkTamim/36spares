@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178" height="97" viewBox="0 0 178 97">
+  <g id="Group_8773" data-name="Group 8773" transform="translate(-439 -1409)">
+    <g id="Group_8765" data-name="Group 8765" transform="translate(476 1412.415)">
+      <text id="Upload_Files" data-name="Upload Files" transform="translate(52 19.585)" fill="#646464" font-size="16" font-family="Helvetica"><tspan x="-44.465" y="0">Upload Files</tspan></text>
+    </g>
+    <g id="Group_8768" data-name="Group 8768" transform="translate(465 1482.415)">
+      <text id="Supported_format:_PNG_PDF" data-name="Supported format: PNG, PDF" transform="translate(62 13.585)" fill="#646464" font-size="8" font-family="Helvetica"><tspan x="-52.02" y="0">Supported format: PNG, PDF</tspan></text>
+    </g>
+    <g id="Group_8764" data-name="Group 8764" transform="translate(-207.025 1021)">
+      <g id="Rectangle_398" data-name="Rectangle 398" transform="translate(646.025 388)" fill="none" stroke="#b8b8b8" stroke-width="1" stroke-dasharray="3">
+        <rect width="178" height="97" rx="2" stroke="none"/>
+        <rect x="0.5" y="0.5" width="177" height="96" rx="1.5" fill="none"/>
+      </g>
+    </g>
+    <g id="cloud-computing" transform="translate(508 1387.112)">
+      <g id="Group_8767" data-name="Group 8767" transform="translate(0 55.032)">
+        <g id="Group_8766" data-name="Group 8766" transform="translate(0 0)">
+          <path id="Path_9206" data-name="Path 9206" d="M32.595,65.208a13.446,13.446,0,0,0-26.453,2.3A7.334,7.334,0,0,0,7.364,82.077h6.112V79.632H7.364a4.89,4.89,0,1,1,0-9.779A1.222,1.222,0,0,0,8.587,68.63a11,11,0,0,1,21.8-2.139,1.222,1.222,0,0,0,1.039.978,6.112,6.112,0,0,1-.831,12.163H25.7v2.445h4.89a8.557,8.557,0,0,0,2-16.869Z" transform="translate(0 -55.032)" fill="#707070"/>
+          <path id="Path_9207" data-name="Path 9207" d="M185.925,249.366l-4.89,4.89,1.724,1.724,2.811-2.8V264.9h2.445V253.18l2.8,2.8,1.724-1.724-4.89-4.89A1.222,1.222,0,0,0,185.925,249.366Z" transform="translate(-167.204 -234.191)" fill="#707070"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
