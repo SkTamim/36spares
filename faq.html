@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>36spares</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" />
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-grid-5.2.css" />
+    <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendor/photoswipe/photoswipe.css" />
+    <link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css" />
+    <link rel="stylesheet" href="vendor/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font - fontawesome -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
+    <!-- font - stroyka -->
+    <link rel="stylesheet" href="fonts/stroyka/stroyka.css" />
+</head>
+
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- mobile site__header -->
+        <header class="site__header d-lg-none">
+            <!-- data-sticky-mode - one of [pullToShow, alwaysOnTop] -->
+            <div class="mobile-header mobile-header--sticky" data-sticky-mode="pullToShow">
+                <div class="mobile-header__panel">
+                    <div class="container">
+                        <div class="mobile-header__body">
+                            <button class="mobile-header__menu-button">
+                                <svg width="18px" height="14px">
+                                    <use xlink:href="images/sprite.svg#menu-18x14"></use>
+                                </svg>
+                            </button>
+                            <a class="mobile-header__logo d-flex align-items-center" href="index.html">
+                                <!-- mobile-logo -->
+                                <img src="images/logos/grey-logo.svg" alt="Logo" class="mr-2" />
+                                <h5 class="m-0" style="color: #646464">36spares</h5>
+                                <!-- mobile-logo / end -->
+                            </a>
+                            <div class="search search--location--mobile-header mobile-header__search">
+                                <div class="search__body">
+                                    <form class="search__form" action="">
+                                        <input class="search__input" name="search" placeholder="Search over 10,000 products" aria-label="Site search" type="text" autocomplete="off" />
+                                        <button class="search__button search__button--type--submit" type="submit">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#search-20"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="search__button search__button--type--close" type="button">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#cross-20"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="search__border"></div>
+                                    </form>
+                                    <div class="search__suggestions suggestions suggestions--location--mobile-header"></div>
+                                </div>
+                            </div>
+                            <div class="mobile-header__indicators">
+                                <div class="indicator indicator--mobile-search indicator--mobile d-md-none">
+                                    <button class="indicator__button">
+                                        <span class="indicator__area">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#search-20"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <!-- <div class="indicator indicator--mobile d-sm-flex d-none">
+                                <a href="wishlist.html" class="indicator__button">
+                                    <span class="indicator__area">
+                                        <svg width="20px" height="20px">
+                                            <use xlink:href="images/sprite.svg#heart-20"></use>
+                                        </svg>
+                                        <span class="indicator__value">0</span>
+                                    </span>
+                                </a>
+                            </div> -->
+                                <div class="indicator indicator--mobile">
+                                    <a href="cart.html" class="indicator__button">
+                                        <span class="indicator__area">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#cart-20"></use>
+                                            </svg>
+                                            <span class="indicator__value">3</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- mobile site__header / end -->
+        <!-- desktop site__header -->
+        <header class="site__header d-lg-block d-none">
+            <div class="site-header">
+                <!-- .topbar -->
+                <div class="site-header__topbar topbar">
+                    <div class="topbar__container container-xxl">
+                        <div class="topbar__row">
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="about-us.html">About Us</a>
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="contact-us.html">Contacts</a>
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="faq.html">FAQ </a>
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="blog-classic.html">Blog</a>
+                            </div>
+                            <div class="topbar__spring"></div>
+                            <div class="topbar__item mr-2">
+                                <button class="btn btn-sm btn-old-style font-weight-light">
+                                    Partner Now
+                                </button>
+                            </div>
+                            <div class="topbar__item mr-2">
+                                <button class="btn btn-sm btn-old-style font-weight-light">
+                                    Give Requirements
+                                </button>
+                            </div>
+                            <div class="topbar__item">
+                                <a href="tel:+91 78400 82310" class="btn btn-old-style-outline font-weight-bold">
+                                    <i class="fas fa-phone-volume"></i>
+                                    +91 78400 82310
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .topbar / end -->
+                <div class="site-header__nav-panel">
+                    <!-- data-sticky-mode - one of [pullToShow, alwaysOnTop] -->
+                    <div class="nav-panel nav-panel--sticky" data-sticky-mode="pullToShow">
+                        <div class="nav-panel__container container-xxl">
+                            <div class="nav-panel__row">
+                                <div class="nav-panel__logo">
+                                    <a href="index.html">
+                                        <!-- logo -->
+                                        <img src="images/logo.png" alt="Logo" class="main-logo" />
+                                        <!-- logo / end -->
+                                    </a>
+                                </div>
+                                <!-- .nav-links -->
+                                <div class="nav-panel__nav-links nav-links">
+                                    <ul class="nav-links__list">
+                                        <li class="nav-links__item nav-links__item--has-submenu">
+                                            <a class="nav-links__item-link" href="shop.html">
+                                                <div class="nav-links__item-body">
+                                                    Category
+                                                    <svg class="nav-links__item-arrow" width="9px" height="6px">
+                                                        <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                            <div class="nav-links__submenu nav-links__submenu--type--menu">
+                                                <!-- .menu -->
+                                                <div class="menu menu--layout--classic">
+                                                    <div class="menu__submenus-container"></div>
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="shop.html">
+                                                                Utility Equipment
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="shop.html">
+                                                                Earthmoving
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="shop.html">
+                                                                Road Equipment
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Concrete Equipment
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="shop.html">
+                                                                Mining Equipment
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- .menu / end -->
+                                            </div>
+                                        </li>
+                                        <li class="nav-links__item nav-links__item--has-submenu">
+                                            <a class="nav-links__item-link" href="account-login.html">
+                                                <div class="nav-links__item-body">
+                                                    Brands
+                                                    <svg class="nav-links__item-arrow" width="9px" height="6px">
+                                                        <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                            <div class="nav-links__submenu nav-links__submenu--type--menu">
+                                                <!-- .menu -->
+                                                <div class="menu menu--layout--classic">
+                                                    <div class="menu__submenus-container"></div>
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> ACE </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Ajax Fiori
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Ashok Leyland
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Atlas Copco
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> BEML </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Bobcat </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Case </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Cat </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Cosben </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Crompton Greaves
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Doosan </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Euro Shatal
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Gomaco </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Havells
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Husqvurna
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> JCB </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Kirloskar
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Komatsu
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Liugong
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Mahindra
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Metso </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Puzzolana
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Rexroth
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Scania </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Schwing Stetter
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Siemens
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Sigma </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Tata Hitachi
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Terex </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Volvo </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> WAM </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Wacker Neuson
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> Wuerth </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#"> XCMG </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- .menu / end -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- .nav-links / end -->
+
+                                <!-- nav-search bar -->
+                                <div class="search search--big-desktop desktop-header__search mx-auto">
+                                    <div class="search__body">
+                                        <form class="search__form" action="">
+                                            <input class="search__input" name="search" placeholder="Search over 10,000 products" aria-label="Site search" type="text" autocomplete="off" />
+                                            <button class="search__button search__button--type--submit" type="submit">
+                                                <svg width="20px" height="20px">
+                                                    <use xlink:href="images/sprite.svg#search-20"></use>
+                                                </svg>
+                                            </button>
+                                            <!-- <button class="search__button search__button--type--close" type="button">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#cross-20"></use>
+                                            </svg>
+                                        </button> -->
+                                            <div class="search__border"></div>
+                                        </form>
+                                        <div class="search__suggestions suggestions suggestions--location--mobile-header"></div>
+                                    </div>
+                                </div>
+                                <!-- nav-search bar / end -->
+
+                                <div class="nav-panel__indicators">
+                                    <!-- <div class="indicator">
+                                    <a href="wishlist.html" class="indicator__button">
+                                        <span class="indicator__area">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#heart-20"></use>
+                                            </svg>
+                                            <span class="indicator__value">0</span>
+                                        </span>
+                                    </a>
+                                </div> -->
+                                    <div class="indicator indicator--trigger--click">
+                                        <a href="cart.html" class="indicator__button">
+                                            <span class="indicator__area">
+                                                <svg width="20px" height="20px">
+                                                    <use xlink:href="images/sprite.svg#cart-20"></use>
+                                                </svg>
+                                                <span class="indicator__value">3</span>
+                                            </span>
+                                        </a>
+                                        <div class="indicator__dropdown">
+                                            <!-- .dropcart -->
+                                            <div class="dropcart dropcart--style--dropdown">
+                                                <div class="dropcart__body">
+                                                    <div class="dropcart__products-list">
+                                                        <div class="dropcart__product">
+                                                            <div class="product-image dropcart__product-image">
+                                                                <a href="product.html" class="product-image__body">
+                                                                    <img class="product-image__img" src="images/products/product-1.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropcart__product-info">
+                                                                <div class="dropcart__product-name">
+                                                                    <a href="product.html">Electric Planer Brandix KL370090G 300
+                                                                        Watts</a>
+                                                                </div>
+                                                                <ul class="dropcart__product-options">
+                                                                    <li>Color: Yellow</li>
+                                                                    <li>Material: Aluminium</li>
+                                                                </ul>
+                                                                <div class="dropcart__product-meta">
+                                                                    <span class="dropcart__product-quantity">2</span>
+                                                                    ×
+                                                                    <span class="dropcart__product-price">$699.00</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon">
+                                                                <svg width="10px" height="10px">
+                                                                    <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="dropcart__product">
+                                                            <div class="product-image dropcart__product-image">
+                                                                <a href="product.html" class="product-image__body">
+                                                                    <img class="product-image__img" src="images/products/product-2.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropcart__product-info">
+                                                                <div class="dropcart__product-name">
+                                                                    <a href="product.html">Undefined Tool IRadix DPS3000SY 2700
+                                                                        watts</a>
+                                                                </div>
+                                                                <div class="dropcart__product-meta">
+                                                                    <span class="dropcart__product-quantity">1</span>
+                                                                    ×
+                                                                    <span class="dropcart__product-price">$849.00</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon">
+                                                                <svg width="10px" height="10px">
+                                                                    <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="dropcart__product">
+                                                            <div class="product-image dropcart__product-image">
+                                                                <a href="product.html" class="product-image__body">
+                                                                    <img class="product-image__img" src="images/products/product-5.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropcart__product-info">
+                                                                <div class="dropcart__product-name">
+                                                                    <a href="product.html">Brandix Router Power Tool 2017ERXPK</a>
+                                                                </div>
+                                                                <ul class="dropcart__product-options">
+                                                                    <li>Color: True Red</li>
+                                                                </ul>
+                                                                <div class="dropcart__product-meta">
+                                                                    <span class="dropcart__product-quantity">3</span>
+                                                                    ×
+                                                                    <span class="dropcart__product-price">$1,210.00</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon">
+                                                                <svg width="10px" height="10px">
+                                                                    <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropcart__totals">
+                                                        <table>
+                                                            <tr>
+                                                                <th>Subtotal</th>
+                                                                <td>$5,877.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Shipping</th>
+                                                                <td>$25.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Tax</th>
+                                                                <td>$0.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Total</th>
+                                                                <td>$5,902.00</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="dropcart__buttons">
+                                                        <a class="btn btn-secondary" href="cart.html">View Cart</a>
+                                                        <a class="btn btn-primary" href="checkout.html">Checkout</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- .dropcart / end -->
+                                        </div>
+                                    </div>
+                                    <div class="indicator">
+                                        <a href="account-login.html" class="indicator__button">
+                                            <span class="indicator__area">
+                                                <svg width="20px" height="20px">
+                                                    <use xlink:href="images/sprite.svg#person-20"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- desktop site__header / end -->
+        <!-- site__body -->
+        <div class="site__body">
+            <div class="page-header">
+                <div class="page-header__container container-xxl">
+                    <div class="page-header__breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">Home</a>
+                                    <svg class="breadcrumb-arrow" width="6px" height="9px">
+                                        <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use>
+                                    </svg>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    FAQ
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="page-header__title">
+                        <h1>Frequently Asked Questions</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="container-xxl">
+                    <div class="card mb-0">
+                        <div class="card-body contact-us">
+                            <div class="contact-us__container">
+                                <div class="row">
+                                    <div class="col-12 py-3">
+                                        <h5 class="">Order Tracking</h5>
+                                        <p>How do I place an order?</p>
+
+                                        <ul class="faq-list">
+                                            <li>
+                                                Ordering at 36spares is easy. Please follow the below
+                                                mentioned steps:
+                                            </li>
+                                            <li>Just select the items you want to shop.</li>
+                                            <li>Enter your shipping address.</li>
+                                            <li>
+                                                Enter your payment information and you are home.
+                                            </li>
+                                            <li>
+                                                If you need any assistance give us a call. We would
+                                                love to take your order over phone. You may contact us
+                                                on +91 78400 82310 to book your order on COD mode.
+                                                Call Timings:- 9:30 AM to 7 PM.
+                                            </li>
+                                        </ul>
+
+                                        <p>Does 36spares sell the products?</p>
+
+                                        <ul class="faq-list">
+                                            <li>
+                                                All the products on this website are sold by 36spares
+                                                directly to the customers. In future we would like to
+                                                open our website to other suppliers as well.
+                                            </li>
+                                        </ul>
+
+                                        <p>How will my order be delivered to me?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Your order would be delivered through reputed courier
+                                                companies at your doorstep. Bulk Orders (greater than
+                                                10) & heavy items are shipped through surface & may
+                                                take more than 10 days for delivery.
+                                            </li>
+                                        </ul>
+
+                                        <p>How will I know if order is placed successfully?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Once your Order is successfully placed, you will
+                                                receive a confirmation over email and text message
+                                                from 36spares.com. This mail will have all the details
+                                                related to your order. Order details can also be
+                                                viewed at My Account > Order history, if you have
+                                                placed the order through your log in id.
+                                            </li>
+                                        </ul>
+
+                                        <p>What is the standard delivery time?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Standard delivery time is 3-5 days, however for some
+                                                products delivery time may vary depending upon the
+                                                availability or depending upon the size of the order
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            Why is standard delivery time different for some
+                                            products?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Time taken to deliver a product depends upon the below
+                                                mentioned parameters:
+                                            </li>
+                                            <li>Stock availability</li>
+                                            <li>Size of the order</li>
+                                            <li>Shipping Address</li>
+                                            <li>size of the product</li>
+                                            <li>Make to Order products</li>
+                                        </ul>
+
+                                        <p>Will I be informed once my order is processed?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Once your order is confirmed and processed, you will
+                                                receive a shipment notification via E-mail/SMS
+                                                advising you on the estimated date of delivery. You
+                                                can also TRACK ORDER online. Please note tracking
+                                                information may not be available for all carriers.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            I got a confirmation call for my order. Why is that?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                You receive a confirmation call for your order to
+                                                verify if there isn't any change with your order.
+                                            </li>
+                                        </ul>
+
+                                        <p>Do you take orders over phone?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Yes. We do take orders over phone. You may contact us
+                                                on +91 78400 82310 to book your order on COD mode.
+                                                Call Timings:- 9:30 AM to 7 PM
+                                            </li>
+                                        </ul>
+
+                                        <p>How do I check the status of my order?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Our order status is updated to you via emails. Once
+                                                your order is placed you would receive an email with
+                                                your order details. Once your order is dispatched ,
+                                                our team would inform you. In case of any unforeseen
+                                                events which delay your order you would receive a
+                                                special update from our end.
+                                            </li>
+                                        </ul>
+
+                                        <p>Why have I not received my order yet?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Due to unforeseen circumstances, it is possible that
+                                                your order might get delayed. We will send you an
+                                                E-mail/SMS informing you about the delay along with
+                                                the new expected delivery date. Please call or mail us
+                                                for immediate response.
+                                            </li>
+                                        </ul>
+
+                                        <p>Can I place a bulk order for an item(s)?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Yes we accept bulk orders, please place an order and
+                                                we will call you on the number provided by you.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            Can I add an item to my order after I have placed my
+                                            order?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Unfortunately no, however you can simply place another
+                                                order.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            I tried placing order using my credit card but it isn't
+                                            working. Can you help me place an order?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Yes if your debit/credit card isn't working we can
+                                                always take your order over phone. Do call us on +91
+                                                78400 82310. Call Timings:- 9:30 AM to 7 PM
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            I tried placing my order using my debit card/credit
+                                            card/Net Banking but the order was not successful. What
+                                            happens to the money deducted from the card?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Please check your bank/credit card account to first
+                                                ensure if your account has been debited. If your
+                                                account has been debited after a payment failure, it
+                                                is normally rolled back by banks within 7 business
+                                                days. The time taken can vary from bank to bank and we
+                                                unfortunately won't be able to expedite this. Please
+                                                check with your bank for more details. If your bank
+                                                informs you otherwise please get back to us. If the
+                                                money has been credited to our account we would
+                                                initiate refund within 3 days of your request. Receipt
+                                                of the refund would however depend on the mode of
+                                                payment mode chosen by you. The expected timelines are
+                                                as below:
+                                            </li>
+                                            <li>Net Banking 5-7 business days</li>
+                                            <li>Debit Card 5-7 business days</li>
+                                            <li>Credit Card 7-21 business days</li>
+                                        </ul>
+
+                                        <p>
+                                            What is the difference between shipping and delivery?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Shipping refers to packing and dispatching of your
+                                                order. While placing an order, you will find a
+                                                shipping timeline on the products displayed on the
+                                                website (e.g. dispatched within 5 days). This refers
+                                                to the number of working days it will take to dispatch
+                                                the product from our end. The delivery may take 1-3
+                                                days depending on the address specified for the order.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            Which courier company will deliver my order? Is it
+                                            possible to choose my preferred delivery partner?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                For a smooth delivery of your orders, we have tied up
+                                                with a number of trustworthy delivery partners. Once
+                                                your order is dispatched, you will be informed about
+                                                the shipping details. Unfortunately, we do not offer
+                                                the option to choose your preferred delivery partner.
+                                                However, we will inform you when such services are
+                                                rolled out in future.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            What should I do if I find my package opened or tampered
+                                            with upon delivery?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                36spares believes in making your shopping experience
+                                                perfect. However, if you receive an open or a tampered
+                                                package, please do not accept it. Report this concern
+                                                and we will look at it immediately and get back to
+                                                you.
+                                            </li>
+                                        </ul>
+
+                                        <p>Why did I receive a partial order?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                We are sorry you had to experience this but please
+                                                check if your order contains items with different
+                                                delivery time. Items with different delivery times are
+                                                shipped to you separately. Do not worry; your order is
+                                                on its way to you!
+                                            </li>
+                                            <li>
+                                                The expected date and time of delivery will be
+                                                communicated to you before the dispatch of your order.
+                                                Under rare circumstances, if we are unable to fulfill
+                                                your order, we will refund you the full payment made
+                                                towards that particular product, at the earliest.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            The status on the tracking website shows delivery was
+                                            attempted but I was not there to receive. Is it possible
+                                            to get the delivery now?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                The courier companies usually make more than one
+                                                attempt to deliver your order. In case you do not
+                                                receive your order, please get in touch with us.
+                                            </li>
+                                        </ul>
+
+                                        <h5 class="">Customer Return Policy</h5>
+                                        <p>
+                                            36spares is happy to serve customer and fulfil their
+                                            requirements. If customer receives any product which
+                                            fulfils the below mentioned criterion, customer is
+                                            eligible for return / exchange:
+                                        </p>
+
+                                        <ul class="faq-list">
+                                            <li>
+                                                Product is used/altered/poor in quality/Defective
+                                                product.
+                                            </li>
+                                            <li>Physical / in-transit damage to the product.</li>
+                                            <li>Branded product received seal opened.</li>
+                                            <li>
+                                                Empty packet/some items or accessories are missing.
+                                            </li>
+                                            <li>Wrong item sent.</li>
+                                        </ul>
+
+                                        <p>Customer is not eligible for return/exchange if</p>
+                                        <ul class="faq-list">
+                                            <li>Its “No longer needed”.</li>
+                                            <li>
+                                                Customer tried to handle the industrial product and
+                                                unable to use it which promotes any tear/damage.
+                                            </li>
+                                            <li>
+                                                Made to Product(on demand) will not be returned.
+                                            </li>
+                                        </ul>
+
+                                        <p>Guidelines for Return/Exchange:</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                For Products purchased on 36spares, in the event the
+                                                customer has any concern with the Product, the
+                                                customer shall raise Return/Exchange request within 7
+                                                days of product delivery. In case product is damaged
+                                                or wrong item has been sent, raise the request within
+                                                48 hours of product Delivery.
+                                            </li>
+                                            <li>
+                                                Customer must share video with Customer care team
+                                                while opening the package in case of Empty
+                                                Package/Quantity issue.
+                                            </li>
+                                            <li>
+                                                Customer must share photographs (Exterior image of the
+                                                box from all sides, Interior image with packaging,
+                                                damaged product image, image of the shipping label)
+                                                with Customer care team in case of damaged or wrong
+                                                product (Videography will be highly appreciated)
+                                                within 48 hours of delivery.
+                                            </li>
+                                            <li>
+                                                In case of Industrial goods return will be accepted
+                                                only in case of wrong, defective, damaged product.
+                                            </li>
+                                            <li>
+                                                In Case of Faulty electronics product, customer need
+                                                to contact nearest service centre for repair/
+                                                replacement.
+                                            </li>
+                                            <li>
+                                                All products must be in new and unopened condition
+                                                with all the original packing, tags, inbox literature,
+                                                warranty/ guarantee card, freebies and accessories
+                                                including keys, straps and locks intact.
+                                            </li>
+                                            <li>
+                                                36spares shall endeavour to process the customer
+                                                refund within 7 (Seven) working days from the date of
+                                                request made to the Customer Care team.
+                                            </li>
+                                        </ul>
+
+                                        <h5>Refund Policy</h5>
+                                        <ul class="faq-list">
+                                            <li>
+                                                The refunds in accordance with the above guidelines
+                                                shall be as per the following:
+                                            </li>
+                                            <li>
+                                                In case of pre-paid order, the refund will be
+                                                processed through payment gateway or any other online
+                                                banking / electronic funds transfer system approved by
+                                                Reserve Bank India and will reflect in same account of
+                                                customer buying the Product from where customer has
+                                                paid the transaction amount.
+                                            </li>
+                                            <li>
+                                                For cash on delivery transactions, refunds, if any,
+                                                will be made via demand draft/NEFT/Cheque etc. in
+                                                favour of the customer buying the Products, as per the
+                                                details provided by the customer.
+                                            </li>
+                                            <li>
+                                                The customer buying the Products will not be charged
+                                                for the pickup, and no other deductions shall be made
+                                                on refunds confirmed to the customer buying the
+                                                Product.
+                                            </li>
+                                            <li>
+                                                Refunds / Returns shall NOT be allowed in the
+                                                following cases:
+                                            </li>
+                                            <li>
+                                                Return request is made outside the specified time
+                                                frame of 7 days as specified above.
+                                            </li>
+
+                                            <li>
+                                                In case where price tags, labels, original packing,
+                                                freebies and accessories, box are missing.
+                                            </li>
+                                            <li>
+                                                If the Product is damaged by the customer, in any
+                                                manner as may be determined by 36spares at its sole
+                                                discretion.
+                                            </li>
+                                            <li>If Product has been used by the customer.</li>
+                                            <li>
+                                                If Product sold as combo/sets cannot be returned as
+                                                individual Product.
+                                            </li>
+                                        </ul>
+
+                                        <h5>Refund</h5>
+                                        <p>
+                                            I've still not received the refund to my bank account.
+                                            Why?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                If you have received a mail/message from us confirming
+                                                your refund request then rest assured that we have
+                                                initiated your refund request and are following up
+                                                with financial organisations for the same.
+                                            </li>
+                                            <li>
+                                                Sometimes financial organisations take a longer time
+                                                to process the refund request. However, if the refund
+                                                hasn't happened by the date we promised, you can
+                                                contact us. We will gladly help you.
+                                            </li>
+                                        </ul>
+
+                                        <p>When are Refunds provided?</p>
+
+                                        <ul class="faq-list">
+                                            <li>
+                                                We work to provide the most hassle-free online
+                                                shopping experience. You are covered and your money
+                                                safe. We initiate the refund process as soon as we
+                                                receive the details.
+                                            </li>
+                                            <li>
+                                                Damaged products are returned to our warehouse and has
+                                                been quality checked.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            I paid the amount upfront while purchasing product from
+                                            36spares, how do I get the refund?
+                                        </p>
+
+                                        <ul class="faq-list">
+                                            <li>
+                                                Your payment is secured. In case of prepaid orders
+                                                (paid through credit card/debit card/net banking), the
+                                                amount is refunded in the same account as you had made
+                                                payment from within 7-10 working days
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            I paid cash on delivery, how would I get the refund?
+                                        </p>
+
+                                        <ul class="faq-list">
+                                            <li>
+                                                If the mode of payment was cash on delivery (COD), we
+                                                will initiate a NEFT bank transfer to your bank
+                                                account. 36spares will contact you for your bank
+                                                account details. It normally takes 7-10 days for your
+                                                money to get reflected in your bank account.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            What are the details you require to process NEFT refund?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Once you agree for NEFT refund, you will receive an
+                                                email from 36spares customer support team asking for.
+                                            </li>
+                                            <li>Bank Name</li>
+                                            <li>Account Number</li>
+                                            <li>Account Holder’s name</li>
+                                            <li>IFSC code</li>
+                                            <li>
+                                                Location of the Bank. We initiate refund process as
+                                                soon as we receive the details from you and it takes
+                                                7-10 working days for the money to be credited to your
+                                                account.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            Can I ask for NEFT refund if I paid through Credit
+                                            Card/Debit Card/Net banking?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                No, in case you paid via credit card/debit card/net
+                                                banking, the amount will be refunded in the same
+                                                account as you had made payment from.
+                                            </li>
+                                        </ul>
+
+                                        <p>How long will it take to refund?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                It takes 7-10 working days for the money to be
+                                                credited to your account.
+                                            </li>
+                                        </ul>
+
+                                        <h5>Payment Options</h5>
+                                        <p>
+                                            What are the modes of payment for purchasing on
+                                            36spares.com? What payment methods do you accept?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>We accept the following modes of payment:</li>
+                                            <li>
+                                                Debit/Credit Cards/Net banking of all major banks
+                                            </li>
+                                            <li>Cash On Delivery (COD)</li>
+                                            <li>NEFT/RTGS</li>
+                                        </ul>
+
+                                        <p>
+                                            What is COD (Cash On Delivery)? Are there any additional
+                                            charges for COD orders?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                COD refers to Cash On Delivery. It doesn’t matter if
+                                                you don’t have a Credit/Debit card or online shopping
+                                                is not your forte. If you are not comfortable making
+                                                an online payment on 36spares.com, you can opt for the
+                                                Cash on Delivery (C-o-D) payment method instead.
+                                                36spares offers you the option of paying for the
+                                                purchase at your doorstep. Just place your order and
+                                                make cash payment to our COD partner upon the delivery
+                                                of your item.
+                                            </li>
+                                            <li>
+                                                Not all deals/products have COD option. Please check
+                                                the deal page before buying. 36spares does not offer
+                                                COD at all locations. Please enter your pin code to
+                                                check the availability of COD option at your location.
+                                            </li>
+                                        </ul>
+
+                                        <p>How do I place Cash on Delivery (C-O-D) order</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                All items that have the "Cash on Delivery Available"
+                                                icon are valid for order by Cash on Delivery.
+                                            </li>
+                                            <li>
+                                                Add the item(s) to your cart and proceed to checkout.
+                                                When prompted to choose a payment option, select "Pay
+                                                By Cash on Delivery". Enter the CAPTCHA text as shown,
+                                                for validation.
+                                            </li>
+                                            <li>
+                                                Once verified and confirmed, your order will be
+                                                processed for shipment in the time specified, from the
+                                                date of confirmation. You will be required to make a
+                                                cash-only payment to our courier partner at the time
+                                                of delivery of your order to complete the payment.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            Can I pay COD (Cash On Delivery) for every product I buy
+                                            on 36spares?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                For most of the products, COD is available and is
+                                                mentioned on the product page. However, due to
+                                                logistics concern, this option might not be available
+                                                for few products.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            How can I pay if COD option is not available on my
+                                            address?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                If COD option is not available on your address you can
+                                                always opt for Net Banking or Credit/Debit Card. In
+                                                case you don't have a Net Banking or Debit Card
+                                                options please contact your bank for Debit Card/Credit
+                                                Card issue.
+                                            </li>
+                                        </ul>
+
+                                        <p>Why isn't COD available to me?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Cash on Delivery (COD) option is not offered by our
+                                                Courier partners at few serviceable locations. Hence,
+                                                based on your location COD option may not be available
+                                                to you. However, you can always opt for payment
+                                                through Net Banking or Credit/Debit Card.
+                                            </li>
+                                            <li>
+                                                We also restrict Cash on Delivery facility for certain
+                                                customers based on our long-term experience. To know
+                                                more, please refer to our Terms and Conditions.
+                                            </li>
+                                        </ul>
+
+                                        <p>How do I pay using a credit/debit card?</p>
+                                        <ul class="faq-list">
+                                            <li>Credit cards:</li>
+                                            <li>
+                                                We accept payments made using Visa, MasterCard and
+                                                American Express credit cards.
+                                            </li>
+                                            <li>
+                                                To pay using your credit card at checkout, you will
+                                                need your card number, expiry date, three-digit CVV
+                                                number (found on the backside of your card). After
+                                                entering these details, you will be redirected to the
+                                                bank's page for entering the online 3D secure
+                                                password.
+                                            </li>
+                                            <li>Debit cards:</li>
+                                            <li>
+                                                We accept payments made using Visa, MasterCard and
+                                                Maestro debit cards.
+                                            </li>
+                                            <li>
+                                                To pay using your debit card at checkout, you will
+                                                need your card number, expiry date (optional for
+                                                Maestro cards), three-digit CVV number (optional for
+                                                Maestro cards). You will then be redirected to your
+                                                bank's secure page for entering your online password
+                                                (issued by your bank) to complete the payment.
+                                            </li>
+                                        </ul>
+
+                                        <p>Is it safe to use my credit/debit card on 36spares?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                Your online transaction on 36spares is secure with the
+                                                highest levels of transaction security currently
+                                                available on the Internet. 36spares uses PayU as a
+                                                payment gateway to protect your card information while
+                                                securely transmitting it to the respective banks for
+                                                payment processing.
+                                            </li>
+                                            <li>
+                                                All credit card and debit card payments on 36spares
+                                                are processed through secure and trusted payment
+                                                gateways managed by leading banks. Banks now use the
+                                                3D secure password service for online transactions,
+                                                providing an additional layer of security through
+                                                identity verification.
+                                            </li>
+                                        </ul>
+
+                                        <p>What is a 3D secure password?</p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                The 3D secure password is implemented by VISA and
+                                                MasterCard in partnership with card issuing banks
+                                                under the "Verified by VISA" and "Mastercard
+                                                SecureCode" services, respectively.
+                                            </li>
+                                            <li>
+                                                The 3D Secure password adds an additional layer of
+                                                security through identity verification for your online
+                                                credit/debit card transactions. This password, which
+                                                is created by you, is known only to you. This ensures
+                                                that only you can use your card for online purchases.
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            What steps does 36spares take to prevent card fraud?
+                                        </p>
+                                        <ul class="faq-list">
+                                            <li>
+                                                36spares realizes the importance of a strong fraud
+                                                detection and resolution capability. We and our online
+                                                payments partners monitor transactions continuously
+                                                for suspicious activity and flag potentially
+                                                fraudulent transactions for manual verification by our
+                                                team.
+                                            </li>
+                                            <li>
+                                                In the rarest of rare cases, when our team is unable
+                                                to rule out the possibility of fraud categorically,
+                                                the transaction is kept on hold, and the customer is
+                                                requested to provide identity documents. The ID
+                                                documents help us ensure that the purchases were
+                                                indeed made by a genuine card holder. We apologize for
+                                                any inconvenience that may be caused to customers and
+                                                request them to bear with us in the larger interest of
+                                                ensuring a safe and secure environment for online
+                                                transactions.
+                                            </li>
+                                        </ul>
+
+                                        <p>Can I use my bank's Internet Banking feature to make a payment?</p>
+                                        <ul class="faq-list">
+                                            <li>Yes. 36spares offers you the convenience of using your bank's Internet Banking service to make a payment towards your order. With this you can directly transfer funds from your bank account, while conducting a highly secure transaction. We accept payment through Internet Banking from almost all banks.</li>
+                                        </ul>
+
+                                        <p>Can I make a credit/debit card or Internet Banking payment on 36spares through my mobile?</p>
+                                        <ul class="faq-list">
+                                            <li>Yes, you can make credit card payments through the mobile site. 36spares uses Razorpay as a payment gateway for credit/ debit card payment. Razorpay uses high end technology to protect your card information.</li>
+                                        </ul>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- site__body / end -->
+        <!-- site__footer -->
+        <footer class="site__footer">
+            <div class="site-footer">
+                <div class="">
+                    <div class="site-footer__widgets footer-grey">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Policies</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Privacy Policy</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Terms & Conditions</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Shipping Policy</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Return Policy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Brands</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Scania</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Ashok Leyland</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">WAM</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Siemens</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Havells</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Categories</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Utility Equipment</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Earthmoving</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Road Equipment</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Concrete Equipment</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Mining Equipment</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Other Pages</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item">
+                                                <a href="about-us.html" class="footer-links__link">About Us</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="contact-us.html" class="footer-links__link">Contact Us</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="faq.html" class="footer-links__link">FAQ</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">Blogs</a>
+                                            </li>
+                                            <li class="footer-links__item">
+                                                <a href="" class="footer-links__link">User Manuals</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-black">
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="site-footer__widget footer-contacts">
+                                        <h5 class="footer-contacts__title">About Us</h5>
+                                        <img src="images/logos/logo-yellow.svg" alt="Logo" />
+                                        <div class="footer-contacts__text text-white mt-2 pr-0">
+                                            Online store for all Construction Industrial Equipments
+                                            & Accessories
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 mt-md-0 mt-5">
+                                    <div class="site-footer__widget footer-contacts">
+                                        <h5 class="footer-contacts__title">Contact Us</h5>
+                                        <ul class="footer-contacts__contacts">
+                                            <li class="text-white">
+                                                <a href="https://goo.gl/maps/pVpPKz8JFhMJ4znc7">
+                                                    <i class="footer-contacts__icon fas fa-globe-americas"></i>
+                                                    C 159, Naraina Industrial Area, Phase I, Naraina,
+                                                    Delhi 110027
+                                                </a>
+                                            </li>
+                                            <li class="text-white">
+                                                <a href="mailto:amol@36spares.com">
+                                                    <i class="footer-contacts__icon far fa-envelope"></i>
+                                                    amol@36spares.com
+                                                </a>
+                                            </li>
+                                            <li class="text-white">
+                                                <a href="tel:+91 78400 82310">
+                                                    <i class="footer-contacts__icon fas fa-mobile-alt"></i>
+                                                    +91 78400 82310
+                                                </a>
+                                            </li>
+                                            <!-- <li class="text-white"><i class="footer-contacts__icon far fa-clock"></i> Mon-Sat 10:00pm - 7:00pm</li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="site-footer__widget footer-newsletter">
+                                        <h5 class="footer-newsletter__title">Newsletter</h5>
+                                        <div class="footer-newsletter__text text-white">
+                                            Subscribe for Special Offers & Discounts
+                                        </div>
+                                        <form action="" class="footer-newsletter__form">
+                                            <label class="sr-only" for="footer-newsletter-address">Email Address</label>
+                                            <input type="text" class="footer-newsletter__form-input form-control" id="footer-newsletter-address" placeholder="Email Address..." />
+                                            <button class="footer-newsletter__form-button btn btn-primary">
+                                                Subscribe
+                                            </button>
+                                        </form>
+                                        <div class="footer-newsletter__text footer-newsletter__text--social text-white">
+                                            Follow us on social networks
+                                        </div>
+                                        <!-- social-links -->
+                                        <div class="social-links footer-newsletter__social-links social-links--shape--circle">
+                                            <ul class="social-links__list">
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--rss" href="" target="_blank">
+                                                        <i class="fas fa-rss"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--youtube" href="" target="_blank">
+                                                        <i class="fab fa-youtube"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--facebook" href="" target="_blank">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--twitter" href="" target="_blank">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--instagram" href="" target="_blank">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- social-links / end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__bottom footer-black">
+                        <div class="container">
+                            <div class="site-footer__copyright text-center text-white-50">
+                                <!-- copyright -->
+                                Copyright ©️ CONTEKNIK ENTERPRISE PRIVATE LIMITED.All rights
+                                reserved
+                                <!-- copyright / end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="totop">
+                    <div class="totop__body">
+                        <div class="totop__start"></div>
+                        <div class="totop__container container"></div>
+                        <div class="totop__end">
+                            <button type="button" class="totop__button">
+                                <svg width="13px" height="8px">
+                                    <use xlink:href="images/sprite.svg#arrow-rounded-up-13x8"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- site__footer / end -->
+    </div>
+    <!-- site / end -->
+    <!-- quickview-modal -->
+    <div id="quickview-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+    <!-- quickview-modal / end -->
+    <!-- mobilemenu -->
+    <div class="mobilemenu">
+        <div class="mobilemenu__backdrop"></div>
+        <div class="mobilemenu__body">
+            <div class="mobilemenu__header">
+                <div class="mobilemenu__title">
+                    <a class="mobile-header__logo d-flex align-items-center" href="index.html">
+                        <!-- mobile-logo -->
+                        <img src="images/logo.png" alt="Logo" class="main-logo" />
+                        <!-- mobile-logo / end -->
+                    </a>
+                </div>
+                <button type="button" class="mobilemenu__close">
+                    <svg width="20px" height="20px">
+                        <use xlink:href="images/sprite.svg#cross-20"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobilemenu__content">
+                <ul class="mobile-links mobile-links--level--0" data-collapse data-collapse-opened-class="mobile-links__item--open">
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="index.html" class="mobile-links__item-link">Home</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="shop.html" class="mobile-links__item-link">Category</a>
+                            <button class="mobile-links__item-toggle" type="button" data-collapse-trigger>
+                                <svg class="mobile-links__item-arrow" width="12px" height="7px">
+                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mobile-links__item-sub-links" data-collapse-content>
+                            <ul class="mobile-links mobile-links--level--1">
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">
+                                            Utility Equipment
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">
+                                            Earthmoving
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">
+                                            Road Equipment
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">
+                                            Concrete Equipment
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">
+                                            Mining Equipment
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="#" class="mobile-links__item-link">Brands</a>
+                            <button class="mobile-links__item-toggle" type="button" data-collapse-trigger>
+                                <svg class="mobile-links__item-arrow" width="12px" height="7px">
+                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mobile-links__item-sub-links" data-collapse-content>
+                            <ul class="mobile-links mobile-links--level--1">
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">ACE</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">
+                                            Ajax Fiori</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Ashok Leyland</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">
+                                            Atlas Copco</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">BEML</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Bobcat</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Case</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Cat</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Cosben</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">
+                                            Crompton Greaves</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Doosan</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Euro Shatal</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Gomaco</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Havells</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Husqvurna</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">JCB</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Kirloskar</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Komatsu</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Liugong</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Mahindra</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Metso</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Puzzolana</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Rexroth</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Scania</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">
+                                            Schwing Stetter</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Siemens</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Sigma</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">
+                                            Tata Hitachi</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Terex</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Volvo</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">WAM</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">
+                                            Wacker Neuson</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">Wuerth</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="#" class="mobile-links__item-link">XCMG</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="about-us.html" class="mobile-links__item-link">ABout Us</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="contact-us.html" class="mobile-links__item-link">Contacts</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="faq.html" class="mobile-links__item-link">FAQ</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="#" class="mobile-links__item-link">Blog</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="#" class="mobile-links__item-link">Partner Now</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="#" class="mobile-links__item-link">Give Requirements</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mobilemenu / end -->
+    <!-- photoswipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>-->
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- photoswipe / end -->
+    <!-- js -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/photoswipe/photoswipe.min.js"></script>
+    <script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script src="vendor/select2/js/select2.min.js"></script>
+    <script src="js/number.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="vendor/svg4everybody/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+</body>
+
+</html>
