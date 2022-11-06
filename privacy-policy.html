@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>36spares</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-grid-5.2.css">
+    <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font - fontawesome -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <!-- font - stroyka -->
+    <link rel="stylesheet" href="fonts/stroyka/stroyka.css">
+</head>
+
+<body>
+    <!-- site -->
+    <div class="site">
+
+        <!-- mobile site__header -->
+        <header class="site__header d-lg-none">
+            <!-- data-sticky-mode - one of [pullToShow, alwaysOnTop] -->
+            <div class="mobile-header mobile-header--sticky" data-sticky-mode="pullToShow">
+                <div class="mobile-header__panel">
+                    <div class="container">
+                        <div class="mobile-header__body">
+                            <button class="mobile-header__menu-button">
+                                <svg width="18px" height="14px">
+                                    <use xlink:href="images/sprite.svg#menu-18x14"></use>
+                                </svg>
+                            </button>
+                            <a class="mobile-header__logo d-flex align-items-center " href="index.html">
+                                <!-- mobile-logo -->
+                                <img src="images/logos/grey-logo.svg" alt="Logo" class="mr-2">
+                                <h5 class="m-0" style="color:#646464;">36spares</h5>
+                                <!-- mobile-logo / end -->
+                            </a>
+                            <div class="search search--location--mobile-header mobile-header__search">
+                                <div class="search__body">
+                                    <form class="search__form" action="">
+                                        <input class="search__input" name="search" placeholder="Search over 10,000 products" aria-label="Site search" type="text" autocomplete="off">
+                                        <button class="search__button search__button--type--submit" type="submit">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#search-20"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="search__button search__button--type--close" type="button">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#cross-20"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="search__border"></div>
+                                    </form>
+                                    <div class="search__suggestions suggestions suggestions--location--mobile-header"></div>
+                                </div>
+                            </div>
+                            <div class="mobile-header__indicators">
+                                <div class="indicator indicator--mobile-search indicator--mobile d-md-none">
+                                    <button class="indicator__button">
+                                        <span class="indicator__area">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#search-20"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="indicator indicator--mobile">
+                                    <a href="cart.html" class="indicator__button">
+                                        <span class="indicator__area">
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#cart-20"></use>
+                                            </svg>
+                                            <span class="indicator__value">3</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- mobile site__header / end -->
+        <!-- desktop site__header -->
+        <header class="site__header d-lg-block d-none">
+            <div class="site-header">
+                <!-- .topbar -->
+                <div class="site-header__topbar topbar">
+                    <div class="topbar__container container-xxl">
+                        <div class="topbar__row">
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="about-us.html">About Us</a>
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="contact-us.html">Contacts</a>
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="">FAQ </a>
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="blog.html">Blog</a>
+                            </div>
+                            <div class="topbar__spring"></div>
+                            <div class="topbar__item mr-2">
+                                <button class="btn btn-sm btn-old-style font-weight-light" data-toggle="modal" data-target="#partnerNowModal">Partner Now</button>
+                            </div>
+                            <div class="topbar__item mr-2">
+                                <button class="btn btn-sm btn-old-style font-weight-light" data-toggle="modal" data-target="#giveModal">Give Requirements</button>
+                            </div>
+                            <div class="topbar__item">
+                                <a href="tel:+91 78400 82310" class="btn btn-old-style-outline font-weight-bold">
+                                    <i class="fas fa-phone-volume"></i>
+                                    +91 78400 82310
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .topbar / end -->
+                <div class="site-header__nav-panel">
+                    <!-- data-sticky-mode - one of [pullToShow, alwaysOnTop] -->
+                    <div class="nav-panel nav-panel--sticky" data-sticky-mode="pullToShow">
+                        <div class="nav-panel__container container-xxl">
+                            <div class="nav-panel__row">
+                                <div class="nav-panel__logo">
+                                    <a href="index.html">
+                                        <!-- logo -->
+                                        <img src="images/logo.png" alt="Logo" class="main-logo">
+                                        <!-- logo / end -->
+                                    </a>
+                                </div>
+                                <!-- .nav-links -->
+                                <div class="nav-panel__nav-links nav-links">
+                                    <ul class="nav-links__list">
+                                        <li class="nav-links__item  nav-links__item--has-submenu ">
+                                            <a class="nav-links__item-link" href="shop.html">
+                                                <div class="nav-links__item-body">
+                                                    Category
+                                                    <svg class="nav-links__item-arrow" width="9px" height="6px">
+                                                        <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                            <div class="nav-links__submenu nav-links__submenu--type--menu">
+                                                <!-- .menu -->
+                                                <div class="menu menu--layout--classic ">
+                                                    <div class="menu__submenus-container"></div>
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="shop.html">
+                                                                Utility Equipment
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="shop.html">
+                                                                Earthmoving
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="shop.html">
+                                                                Road Equipment
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Concrete Equipment
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="shop.html">
+                                                                Mining Equipment
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- .menu / end -->
+                                            </div>
+                                        </li>
+                                        <li class="nav-links__item  nav-links__item--has-submenu ">
+                                            <a class="nav-links__item-link" href="account-login.html">
+                                                <div class="nav-links__item-body">
+                                                    Brands
+                                                    <svg class="nav-links__item-arrow" width="9px" height="6px">
+                                                        <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                            <div class="nav-links__submenu nav-links__submenu--type--menu">
+                                                <!-- .menu -->
+                                                <div class="menu menu--layout--classic ">
+                                                    <div class="menu__submenus-container"></div>
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                ACE
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Ajax Fiori
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Ashok Leyland
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Atlas Copco
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                BEML
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Bobcat
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Case
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Cat
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Cosben
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Crompton Greaves
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Doosan
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Euro Shatal
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Gomaco
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Havells
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Husqvurna
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                JCB
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Kirloskar
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Komatsu
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Liugong
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Mahindra
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Metso
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Puzzolana
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Rexroth
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Scania
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Schwing Stetter
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Siemens
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Sigma
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Tata Hitachi
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Terex
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Volvo
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                WAM
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Wacker Neuson
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                Wuerth
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                            <div class="menu__item-submenu-offset"></div>
+                                                            <a class="menu__item-link" href="#">
+                                                                XCMG
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <!-- .menu / end -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- .nav-links / end -->
+
+                                <!-- nav-search bar -->
+                                <div class="search search--big-desktop desktop-header__search mx-auto">
+                                    <div class="search__body">
+                                        <form class="search__form" action="">
+                                            <input class="search__input" name="search" placeholder="Search over 10,000 products" aria-label="Site search" type="text" autocomplete="off">
+                                            <button class="search__button search__button--type--submit" type="submit">
+                                                <svg width="20px" height="20px">
+                                                    <use xlink:href="images/sprite.svg#search-20"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="search__border"></div>
+                                        </form>
+                                        <div class="search__suggestions suggestions suggestions--location--mobile-header"></div>
+                                    </div>
+                                </div>
+                                <!-- nav-search bar / end -->
+
+
+                                <div class="nav-panel__indicators align-items-center">
+
+                                    <div class="indicator indicator--trigger--click">
+                                        <a href="cart.html" class="indicator__button btn btn-primary btn-forsed radious-50">
+                                            <span class="indicator__area px-4">
+                                                <span class="mr-2">Cart</span>
+                                                <svg width="20px" height="20px">
+                                                    <use xlink:href="images/sprite.svg#cart-20"></use>
+                                                </svg>
+                                                <!-- <span class="indicator__value">3</span> -->
+                                            </span>
+                                        </a>
+                                        <div class="indicator__dropdown">
+                                            <!-- .dropcart -->
+                                            <div class="dropcart dropcart--style--dropdown">
+                                                <div class="dropcart__body">
+                                                    <div class="dropcart__products-list">
+                                                        <div class="dropcart__product">
+                                                            <div class="product-image dropcart__product-image">
+                                                                <a href="product.html" class="product-image__body">
+                                                                    <img class="product-image__img" src="images/products/product-1.jpg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropcart__product-info">
+                                                                <div class="dropcart__product-name"><a href="product.html">Electric Planer Brandix KL370090G 300 Watts</a></div>
+                                                                <ul class="dropcart__product-options">
+                                                                    <li>Color: Yellow</li>
+                                                                    <li>Material: Aluminium</li>
+                                                                </ul>
+                                                                <div class="dropcart__product-meta">
+                                                                    <span class="dropcart__product-quantity">2</span> ×
+                                                                    <span class="dropcart__product-price">$699.00</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon">
+                                                                <svg width="10px" height="10px">
+                                                                    <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="dropcart__product">
+                                                            <div class="product-image dropcart__product-image">
+                                                                <a href="product.html" class="product-image__body">
+                                                                    <img class="product-image__img" src="images/products/product-2.jpg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropcart__product-info">
+                                                                <div class="dropcart__product-name"><a href="product.html">Undefined Tool IRadix DPS3000SY 2700 watts</a></div>
+                                                                <div class="dropcart__product-meta">
+                                                                    <span class="dropcart__product-quantity">1</span> ×
+                                                                    <span class="dropcart__product-price">$849.00</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon">
+                                                                <svg width="10px" height="10px">
+                                                                    <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="dropcart__product">
+                                                            <div class="product-image dropcart__product-image">
+                                                                <a href="product.html" class="product-image__body">
+                                                                    <img class="product-image__img" src="images/products/product-5.jpg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropcart__product-info">
+                                                                <div class="dropcart__product-name"><a href="product.html">Brandix Router Power Tool 2017ERXPK</a></div>
+                                                                <ul class="dropcart__product-options">
+                                                                    <li>Color: True Red</li>
+                                                                </ul>
+                                                                <div class="dropcart__product-meta">
+                                                                    <span class="dropcart__product-quantity">3</span> ×
+                                                                    <span class="dropcart__product-price">$1,210.00</span>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon">
+                                                                <svg width="10px" height="10px">
+                                                                    <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropcart__totals">
+                                                        <table>
+                                                            <tr>
+                                                                <th>Subtotal</th>
+                                                                <td>$5,877.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Shipping</th>
+                                                                <td>$25.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Tax</th>
+                                                                <td>$0.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Total</th>
+                                                                <td>$5,902.00</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="dropcart__buttons">
+                                                        <a class="btn btn-secondary" href="cart.html">View Cart</a>
+                                                        <a class="btn btn-primary" href="checkout.html">Checkout</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- .dropcart / end -->
+                                        </div>
+                                    </div>
+                                    <div class="indicator ml-2">
+                                        <a href="account-login.html" class="indicator__button  btn btn-primary btn-forsed radious-50">
+                                            <span class="indicator__area">
+                                                <svg width="20px" height="20px">
+                                                    <use xlink:href="images/sprite.svg#person-20"></use>
+                                                </svg>
+                                                <span class="ml-2">Login</span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- desktop site__header / end -->
+
+        <!-- site__body -->
+        <div class="site__body">
+            <div class="page-header">
+                <div class="page-header__container container-xxl">
+                    <div class="page-header__breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">Home</a>
+                                    <svg class="breadcrumb-arrow" width="6px" height="9px">
+                                        <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use>
+                                    </svg>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="container-xxl">
+                    <div class="document">
+                        <div class="document__header">
+                            <h1 class="document__title">Privacy Policy</h1>
+                        </div>
+
+                        <div class="document__content typography">
+                            <p>CONTEKNIK ENTERPRISE PRIVATE LIMITED (hereinafter referred to as “36spares”) is committed to safeguarding its users’ privacy (hereinafter referred to as “Your” “You”) accessing its website (i.e.36spares.com) and has provided this Privacy Policy to familiarize You with the manner in which 36spares collects, uses and discloses Your information collected through the Website.</p>
+                            <p>Before you subscribe to and/or begin participating in or using website, 36spares believes that You have fully read, understood and accept the terms and conditions of this privacy policy.</p>
+                            <p>The Policy applies to all information that 36spares has about You and Your account.</p>
+                            <p>If you do not agree to or wish to be bound by the terms and conditions of this privacy policy, please do not proceed further to use this website.</p>
+                            <p>This Policy should be at all times read along with the Terms of Use of the Website.</p>
+                            <p>This document is published in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, privacy policy for access or usage of www.36spares.com website.</p>
+                            <h4>COLLECTION OF INFORMATION</h4>
+                            <p>36spares collects information, including sensitive personal data and information (collectively, “Information”), from the users, when they register to gain access to the services provided by 36spares or at other specific instances when 36spares deems it necessary and requests users to provide the Information. Information shall include, but not be limited to, the following:</p>
+                            <ul>
+                                <li>NAME OF THE USER</li>
+                                <li>DATE OF BIRTH</li>
+                                <li>GENDER</li>
+                                <li>ADDRESS</li>
+                                <li>TELEPHONE NUMBER</li>
+                                <li>E-MAIL ADDRESS</li>
+                                <li>PASSWORD(S)</li>
+                                <li>FINANCIAL INFORMATION IN THE NATURE OF BANK ACCOUNT, CREDIT CARD, DEBIT CARD OR</li>
+                                <li>OTHER PAYMENT INSTRUMENT DETAILS</li>
+                            </ul>
+                            <p>You can always choose not to provide information and in such cases, if the information required is classified as mandatory, You will not be able to avail of that part of the Services, features or content. You can add or update Your Personal Information on a regular basis. When You update information, 36spares will keep a copy of the prior version for its records.</p>
+                            <p>36spares's primary goal in collecting information is to provide the user with a customized experience on our websites. This includes personalized services, interactive communication and other services. 36spares collects Your Personal Information in order to record, support and facilitate Your participation in the activities You select, track Your preferences, to notify You of any updated information and new activities and other related functions offered by 36spares, keep You informed about latest content available on the Website, special offers, and other products and services of 36spares, to provide You with a customized Website experience, to assist You with customer service or technical support issues, to follow up with You after Your visit, to otherwise support Your relationship with 36spares or to prevent fraud and unlawful use.</p>
+                            <p>Certain information may be collected when you visit the Website and such information may be stored in server logs in the form of data. Through this Data 36spares understand the use and number of user visiting the Website. Some or all data collected may be shared with the sponsors, investors, advertisers, developer, strategic business partners of 36spares. While using the Website, 36spares's servers (hosted by a third party service provider) may collect information indirectly and automatically about Your activities on the Website; for instance by way of cookies.</p>
+                            <p>Promotions that run on our website may be sponsored by companies other than 36spares or may be co-sponsored by 36spares and another company. We use third-party service providers to serve ads on our behalf across the internet and sometimes on the Website. They may collect information about Your visits to our Website. 36spares uses the log file which includes but not limited to internet protocol (IP) addresses, browser software, number of clicks, number of unique visitors, internet service provider, exit/referring pages, type of platform, date/time stamp, screen resolution etc. for analysis that helps us provide you improved user experience and services.</p>
+                            <p>We record buying and browsing activities of our users including but not limited to YOUR contact details and profiles and uses the same to provide value-added services to our users.</p>
+                            <p>We use them to administer the site, track a user's movement and gather broad demographic information for aggregate use. Once a user registers, he/she is no longer anonymous to 36spares and it is deemed that the user has given 36spares the right to use the personal &amp; non personal information.</p>
+                            <p>Please note our website is also not a risks proof website.</p>
+                            <h4>USE OF INFORMATION</h4>
+                            <p>Business information is used to display the user's business listing or product offerings across our website to fetch maximum business opportunities for the user. If You upload any content on the Website and the same may be available to the other users of the Website. 36spares will not be liable for the disclosure and dissemination of such content to any third parties. Once the user's content is displayed on our website, the user may start receiving business enquiries through email, phone calls, Whatsapp or SMS notifications, from third parties that might or might not be of their interest, 36spares does not exercise any control over it.</p>
+                            <p>We may also use your Personal Information to contact you via SMS, Email, Whatsapp, or any other messaging service for several reasons including but not limited to:</p>
+                            <ul>
+                                <li>Send Order confirmation</li>
+                                <li>Keep you informed of the current order status</li>
+                                <li>Send any updates or changes for your orders</li>
+                                <li>Request for product or service reviews</li>
+                                <li>Send verification message(s)</li>
+                                <li>Validate/authenticate your account to prevent any misuse or abuse</li>
+                                <li>Contact you for a special gift or offer</li>
+                            </ul>
+                            <h4>DISCLOSURE</h4>
+                            <p>In situations when 36spares is legally obligated to disclose information to the government or other third parties, 36spares will do so.</p>
+                            <h4>SHARING OF INFORMATION</h4>
+                            <p>As a general rule, 36spares will not disclose or share any of the user's personally identifiable information except when 36spares has the user's permission or under special circumstances, such as when 36spares believes in good faith that the law requires it or as permitted in terms of this policy.</p>
+                            <p>You are required to submit Your information at the time of making an online purchase on the Website. 36spares uses an online payment gateway that is operated by a third party and the information that You share with 36spares is transferred and shared with such third party payment gateway operator. The said operator may also have access to Your online purchase history/details that You make from the Website. Extremely sensitive information like Your credit-card details are transacted upon secure sites of approved payment gateways which are digitally under encryption, thereby providing the highest possible degree of care as per current technology. You are advised, however, that internet technology is not 100% safe and You should exercise discretion on using the same.</p>
+                            <h4>LINKS TO THIRD PARTY SITES</h4>
+                            <p>Links to third party sites are provided by website as a convenience to user(s) and 36spares has not have any control over such sites i.e. content and resources provided by them. 36spares may allow user(s) access to content, products or services offered by third parties through hyper links (in the form of word link, banners, channels or otherwise) to such Third Party's web site. You are cautioned to read such sites' terms and conditions and/or privacy policies before using such sites in order to be aware of the terms and conditions of your use of such sites. 36spares believes that user(s) acknowledge that 36spares has no control over such third party's site, does not monitor such sites, and 36spares shall not be responsible or liable to anyone for such third party site, or any content, products or services made available on such a site.</p>
+                            <h4>PROTECTION OF INFORMATION</h4>
+                            <p>36spares takes necessary steps, within its limits of commercial viability and necessity, to ensure that the user's information is treated securel</p>
+                            <p>We request our users to sign out of their 36spares account and close their browser window when they have finished their work. This is to ensure that others cannot access their personal or business information and correspondence, if the user shares the computer with someone else or is using a computer in a public place.</p>
+                            <p>Unfortunately, no data transmission over the Internet can be guaranteed to be 100% secure. As a result, while 36spares strives to protect the user's personal &amp; business information, it cannot ensure the security of any information transmitted to 36spares and you do so at your own risk. Once 36spares receives your transmission, it makes best efforts to ensure its security in its systems. Please keep in mind that whenever you post personal &amp; business information online, that is accessible to the public, you may receive unsolicited messages from other parties.</p>
+                            <p>36spares is not responsible for any breach of security or for any actions of any third parties that receive Your Information. The Website also linked to many other sites and we are not/shall be not responsible for their privacy policies or practices as it is beyond our control.</p>
+                            <p>Notwithstanding anything contained in this Policy or elsewhere, 36spares shall not be held responsible for any loss, damage or misuse of Your Information, if such loss, damage or misuse is attributable to a Force Majeure Event (as defined in Terms of Use).</p>
+                            <h4>DISTRIBUTION OF INFORMATION</h4>
+                            <p>36spares may, from time to time, send its users emails regarding its products and services. 36spares constantly tries and improves the website for better efficiency, more relevancy, innovative business matchmaking and better personal preferences. 36spares may allow direct mails using its own scripts (without disclosing the email address) with respect/pertaining to the products and services of third parties that it feels may be of interest to the user or if the user has shown interest in the same.</p>
+                            <h4>CHANGES IN PRIVACY POLICY</h4>
+                            <p>The policy may change from time to time so please check periodically. The revised Policy shall be made available on the Website. Your continued use of the Website, following changes to the Policy, will constitute your acceptance of those changes. Any disputes arising under this Policy shall be governed by the laws of India.</p>
+                            <h4>GRIEVANCES</h4>
+                            <p>In case of any grievance regarding use of your Information, please write at:</p>
+                            <p>Email: amol@36spares.com</p>
+                            <p>Address: C159, Naraina Industrial Area Ph I, Naraina, Delhi 110027</p>
+                            <p>with all the relevant details of your grievance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- site__body / end -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+            <div class="site-footer">
+                <div class="">
+                    <div class="site-footer__widgets  footer-grey">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Policies</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item"><a href="privacy-policy.html" class="footer-links__link">Privacy Policy</a></li>
+                                            <li class="footer-links__item"><a href="terms.html" class="footer-links__link">Terms & Conditions</a></li>
+                                            <li class="footer-links__item"><a href="shipping-policy.html" class="footer-links__link">Shipping Policy</a></li>
+                                            <li class="footer-links__item"><a href="return-policy.html" class="footer-links__link">Return Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Brands</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Scania</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Ashok Leyland</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">WAM</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Siemens</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Havells</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Categories</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Utility Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Earthmoving</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Road Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Concrete Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Mining Equipment</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Other Pages</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item"><a href="about-us.html" class="footer-links__link">About Us</a></li>
+                                            <li class="footer-links__item"><a href="contact-us.html" class="footer-links__link">Contact Us</a></li>
+                                            <li class="footer-links__item"><a href="faq.html" class="footer-links__link">FAQ</a></li>
+                                            <li class="footer-links__item"><a href="blog.html" class="footer-links__link">Blogs</a></li>
+                                            <li class="footer-links__item"><a href="user-manuals.html" class="footer-links__link">User Manuals</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-black">
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="site-footer__widget footer-contacts">
+                                        <h5 class="footer-contacts__title">About Us</h5>
+                                        <img src="images/logos/logo-yellow.svg" alt="Logo">
+                                        <div class="footer-contacts__text text-white mt-2 pr-0">
+                                            Online store for all Construction
+                                            Industrial Equipments & Accessories
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 mt-md-0 mt-5">
+                                    <div class="site-footer__widget footer-contacts">
+                                        <h5 class="footer-contacts__title">Contact Us</h5>
+                                        <ul class="footer-contacts__contacts">
+                                            <li class="text-white">
+                                                <a href="https://goo.gl/maps/pVpPKz8JFhMJ4znc7">
+                                                    <i class="footer-contacts__icon fas fa-globe-americas"></i>
+                                                    C 159, Naraina Industrial Area, Phase I, Naraina, Delhi 110027
+                                                </a>
+                                            </li>
+                                            <li class="text-white">
+                                                <a href="mailto:amol@36spares.com">
+                                                    <i class="footer-contacts__icon far fa-envelope"></i>
+                                                    amol@36spares.com
+                                                </a>
+                                            </li>
+                                            <li class="text-white">
+                                                <a href="tel:+91 78400 82310">
+                                                    <i class="footer-contacts__icon fas fa-mobile-alt"></i>
+                                                    +91 78400 82310
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="site-footer__widget footer-newsletter">
+                                        <h5 class="footer-newsletter__title">Newsletter</h5>
+                                        <div class="footer-newsletter__text text-white">
+                                            Subscribe for Special Offers & Discounts
+                                        </div>
+                                        <form action="" class="footer-newsletter__form">
+                                            <label class="sr-only" for="footer-newsletter-address">Email Address</label>
+                                            <input type="text" class="footer-newsletter__form-input form-control" id="footer-newsletter-address" placeholder="Email Address...">
+                                            <button class="footer-newsletter__form-button btn btn-primary">Subscribe</button>
+                                        </form>
+                                        <div class="footer-newsletter__text footer-newsletter__text--social text-white">
+                                            Follow us on social networks
+                                        </div>
+                                        <!-- social-links -->
+                                        <div class="social-links footer-newsletter__social-links social-links--shape--circle">
+                                            <ul class="social-links__list">
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--rss" href="" target="_blank">
+                                                        <i class="fas fa-rss"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--youtube" href="" target="_blank">
+                                                        <i class="fab fa-youtube"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--facebook" href="" target="_blank">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--twitter" href="" target="_blank">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--instagram" href="" target="_blank">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- social-links / end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__bottom footer-black">
+                        <div class="container">
+                            <div class="site-footer__copyright text-center text-white-50">
+                                <!-- copyright -->
+                                Copyright ©️ CONTEKNIK ENTERPRISE PRIVATE LIMITED.All rights reserved
+                                <!-- copyright / end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="totop">
+                    <div class="totop__body">
+                        <div class="totop__start"></div>
+                        <div class="totop__container container"></div>
+                        <div class="totop__end">
+                            <button type="button" class="totop__button">
+                                <svg width="13px" height="8px">
+                                    <use xlink:href="images/sprite.svg#arrow-rounded-up-13x8"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- site__footer / end -->
+
+    </div>
+    <!-- site / end -->
+    <!-- quickview-modal -->
+    <div id="quickview-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+    <!-- quickview-modal / end -->
+
+    <!-- photoswipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>-->
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- photoswipe / end -->
+
+    <!-- mobilemenu -->
+    <div class="mobilemenu">
+        <div class="mobilemenu__backdrop"></div>
+        <div class="mobilemenu__body">
+            <div class="mobilemenu__header">
+                <div class="mobilemenu__title">
+                    <a class="mobile-header__logo d-flex align-items-center " href="index.html">
+                        <!-- mobile-logo -->
+                        <img src="images/logo.png" alt="Logo" class="main-logo">
+                        <!-- mobile-logo / end -->
+                    </a>
+                </div>
+                <button type="button" class="mobilemenu__close">
+                    <svg width="20px" height="20px">
+                        <use xlink:href="images/sprite.svg#cross-20"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobilemenu__content">
+                <ul class="mobile-links mobile-links--level--0" data-collapse data-collapse-opened-class="mobile-links__item--open">
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="index.html" class="mobile-links__item-link">Home</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="shop.html" class="mobile-links__item-link">Category</a>
+                            <button class="mobile-links__item-toggle" type="button" data-collapse-trigger>
+                                <svg class="mobile-links__item-arrow" width="12px" height="7px">
+                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mobile-links__item-sub-links" data-collapse-content>
+                            <ul class="mobile-links mobile-links--level--1">
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Utility Equipment </a>
+                                    </div>
+                                </li>
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Earthmoving </a>
+                                    </div>
+                                </li>
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Road Equipment </a>
+                                    </div>
+                                </li>
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Concrete Equipment </a>
+                                    </div>
+                                </li>
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Mining Equipment </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="#" class="mobile-links__item-link">Brands</a>
+                            <button class="mobile-links__item-toggle" type="button" data-collapse-trigger>
+                                <svg class="mobile-links__item-arrow" width="12px" height="7px">
+                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mobile-links__item-sub-links" data-collapse-content>
+                            <ul class="mobile-links mobile-links--level--1">
+                                <li class="mobile-links__item" data-collapse-item>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">ACE</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Ajax Fiori</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Ashok Leyland</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Atlas Copco</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">BEML</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Bobcat</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Case</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Cat</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Cosben</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Crompton Greaves</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Doosan</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Euro Shatal</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Gomaco</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Havells</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Husqvurna</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">JCB</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Kirloskar</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Komatsu</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Liugong</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Mahindra</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Metso</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Puzzolana</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Rexroth</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Scania</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Schwing Stetter</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Siemens</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Sigma</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Tata Hitachi</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Terex</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Volvo</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">WAM</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link"> Wacker Neuson</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">Wuerth</a>
+                                    </div>
+                                    <div class="mobile-links__item-title">
+                                        <a href="shop.html" class="mobile-links__item-link">XCMG</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="about-us.html" class="mobile-links__item-link">ABout Us</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="contact-us.html" class="mobile-links__item-link">Contacts</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="faq.html" class="mobile-links__item-link">FAQ</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="blog.html" class="mobile-links__item-link">Blog</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="#partnerNowModal" class="mobile-links__item-link" data-toggle="modal" data-target="#partnerNowModal">Partner Now</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title">
+                            <a href="#giveModal" class="mobile-links__item-link" data-toggle="modal" data-target="#giveModal">Give Requirements</a>
+                        </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title align-items-center">
+                            <a href="account-login.html" class="indicator__button  btn btn-primary btn-forsed w-100">
+                                <span class="indicator__area">
+                                    <svg width="20px" height="20px">
+                                        <use xlink:href="images/sprite.svg#person-20"></use>
+                                    </svg>
+                                    <span class="ml-2">Login</span>
+                                </span>
+                            </a>
+                        </div>
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mobilemenu / end -->
+
+    <!-- partnerNow-modal -->
+    <div id="partnerNowModal" class="modal fade p-0" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="partnerNowModalLabel">Become a 36Spares Partner</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control styled-input" id="partner-name" placeholder="Enter your name*">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control styled-input" id="partner-number" placeholder="Enter your number*">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control styled-input" id="partner-number" placeholder="Enter your email*">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control styled-input" id="partner-pin" placeholder="Enter your pincode*">
+                        </div>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Request Call</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partnerNow-modal / end -->
+
+    <!-- Give Requerment Modal -->
+    <div id="giveModal" class="modal fade p-0" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="giveModalLabel">Give Requirements</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control styled-input" id="give-name" placeholder="Enter your name*">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control styled-input" id="give-number" placeholder="Enter your number*">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control styled-input" id="give-number" placeholder="Enter your email*">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="give-description">Description*</label>
+                            <textarea class="form-control styled-input" id="give-description" rows="3"></textarea>
+                        </div>
+
+                        <div class="custom-upload">
+                            <input type="file" name="upload" id="upload" accept=".pdf,image/png, image/jpeg">
+                            <div class="">
+                                <p class="m-0">Upload Files</p>
+                                <p style="font-size: 10px; margin:0 ;">Supported format PNG, JPEG, PDF</p>
+                            </div>
+                            <img src="images/icons/upload.svg" alt="Upload" class="mr-2">
+                        </div>
+
+                        <div class="text-right mt-3">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Request Call</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Give Requerment Modal / end -->
+
+    <!-- js -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/photoswipe/photoswipe.min.js"></script>
+    <script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script src="vendor/select2/js/select2.min.js"></script>
+    <script src="js/number.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="vendor/svg4everybody/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+</body>
+
+</html>

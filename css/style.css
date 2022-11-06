@@ -250,12 +250,12 @@ h6 {
 .document {
   border: 2px solid #f0f0f0;
   border-radius: 2px;
-  padding: 85px 200px 120px;
+  padding: 50px 60px;
 }
 
 .document__header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .document__subtitle {
