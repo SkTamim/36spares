@@ -26,6 +26,9 @@
 <body>
     <!-- site -->
     <div class="site">
+      
+        
+
         <!-- mobile site__header -->
         <header class="site__header d-lg-none">
             <!-- data-sticky-mode - one of [pullToShow, alwaysOnTop] -->
@@ -73,16 +76,6 @@
                                         </span>
                                     </button>
                                 </div>
-                                <!-- <div class="indicator indicator--mobile d-sm-flex d-none">
-                                    <a href="wishlist.html" class="indicator__button">
-                                        <span class="indicator__area">
-                                            <svg width="20px" height="20px">
-                                                <use xlink:href="images/sprite.svg#heart-20"></use>
-                                            </svg>
-                                            <span class="indicator__value">0</span>
-                                        </span>
-                                    </a>
-                                </div> -->
                                 <div class="indicator indicator--mobile">
                                     <a href="cart.html" class="indicator__button">
                                         <span class="indicator__area">
@@ -117,14 +110,14 @@
                                 <a class="topbar-link" href="">FAQ </a>
                             </div>
                             <div class="topbar__item topbar__item--link">
-                                <a class="topbar-link" href="blog-classic.html">Blog</a>
+                                <a class="topbar-link" href="blog.html">Blog</a>
                             </div>
                             <div class="topbar__spring"></div>
                             <div class="topbar__item mr-2">
-                                <button class="btn btn-sm btn-old-style font-weight-light">Partner Now</button>
+                                <button class="btn btn-sm btn-old-style font-weight-light" data-toggle="modal" data-target="#partnerNowModal">Partner Now</button>
                             </div>
                             <div class="topbar__item mr-2">
-                                <button class="btn btn-sm btn-old-style font-weight-light">Give Requirements</button>
+                                <button class="btn btn-sm btn-old-style font-weight-light" data-toggle="modal" data-target="#giveModal">Give Requirements</button>
                             </div>
                             <div class="topbar__item">
                                 <a href="tel:+91 78400 82310" class="btn btn-old-style-outline font-weight-bold">
@@ -477,11 +470,6 @@
                                                     <use xlink:href="images/sprite.svg#search-20"></use>
                                                 </svg>
                                             </button>
-                                            <!-- <button class="search__button search__button--type--close" type="button">
-                                                <svg width="20px" height="20px">
-                                                    <use xlink:href="images/sprite.svg#cross-20"></use>
-                                                </svg>
-                                            </button> -->
                                             <div class="search__border"></div>
                                         </form>
                                         <div class="search__suggestions suggestions suggestions--location--mobile-header"></div>
@@ -490,25 +478,16 @@
                                 <!-- nav-search bar / end -->
 
 
-                                <div class="nav-panel__indicators">
+                                <div class="nav-panel__indicators align-items-center">
                                    
-                                    <!-- <div class="indicator">
-                                        <a href="wishlist.html" class="indicator__button">
-                                            <span class="indicator__area">
-                                                <svg width="20px" height="20px">
-                                                    <use xlink:href="images/sprite.svg#heart-20"></use>
-                                                </svg>
-                                                <span class="indicator__value">0</span>
-                                            </span>
-                                        </a>
-                                    </div> -->
                                     <div class="indicator indicator--trigger--click">
-                                        <a href="cart.html" class="indicator__button">
-                                            <span class="indicator__area">
+                                        <a href="cart.html" class="indicator__button btn btn-primary btn-forsed radious-50">
+                                            <span class="indicator__area px-4">
+                                                <span class="mr-2">Cart</span>
                                                 <svg width="20px" height="20px">
                                                     <use xlink:href="images/sprite.svg#cart-20"></use>
                                                 </svg>
-                                                <span class="indicator__value">3</span>
+                                                <!-- <span class="indicator__value">3</span> -->
                                             </span>
                                         </a>
                                         <div class="indicator__dropdown">
@@ -610,16 +589,19 @@
                                             <!-- .dropcart / end -->
                                         </div>
                                     </div>
-                                    <div class="indicator">
-                                        <a href="account-login.html" class="indicator__button">
+                                    <div class="indicator ml-2">
+                                        <a href="account-login.html" class="indicator__button  btn btn-primary btn-forsed radious-50">
                                             <span class="indicator__area">
                                                 <svg width="20px" height="20px">
                                                     <use xlink:href="images/sprite.svg#person-20"></use>
                                                 </svg>
+                                                <span class="ml-2">Login</span>
                                             </span>
                                         </a>
                                     </div>
+
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -1639,7 +1621,8 @@
             </div>
         </div>
         <!-- site__body / end -->
-        <!-- site__footer -->
+
+           <!-- site__footer -->
         <footer class="site__footer">
             <div class="site-footer">
                 <div class="">
@@ -1650,10 +1633,10 @@
                                     <div class="site-footer__widget footer-links">
                                         <h5 class="footer-links__title">Policies</h5>
                                         <ul class="footer-links__list">
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Privacy Policy</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Terms & Conditions</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Shipping Policy</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Return Policy</a></li>
+                                            <li class="footer-links__item"><a href="privacy-policy.html" class="footer-links__link">Privacy Policy</a></li>
+                                            <li class="footer-links__item"><a href="terms.html" class="footer-links__link">Terms & Conditions</a></li>
+                                            <li class="footer-links__item"><a href="shipping-policy.html" class="footer-links__link">Shipping Policy</a></li>
+                                            <li class="footer-links__item"><a href="return-policy.html" class="footer-links__link">Return Policy</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1661,11 +1644,11 @@
                                     <div class="site-footer__widget footer-links">
                                         <h5 class="footer-links__title">Brands</h5>
                                         <ul class="footer-links__list">
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Scania</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Ashok Leyland</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">WAM</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Siemens</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Havells</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Scania</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Ashok Leyland</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">WAM</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Siemens</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Havells</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1673,11 +1656,11 @@
                                     <div class="site-footer__widget footer-links">
                                         <h5 class="footer-links__title">Categories</h5>
                                         <ul class="footer-links__list">
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Utility Equipment</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Earthmoving</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Road Equipment</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Concrete Equipment</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Mining Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Utility Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Earthmoving</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Road Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Concrete Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Mining Equipment</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1685,11 +1668,11 @@
                                     <div class="site-footer__widget footer-links">
                                         <h5 class="footer-links__title">Other Pages</h5>
                                         <ul class="footer-links__list">
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">About Us</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Contact Us</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">FAQ</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">Blogs</a></li>
-                                            <li class="footer-links__item"><a href="" class="footer-links__link">User Manuals</a></li>
+                                            <li class="footer-links__item"><a href="about-us.html" class="footer-links__link">About Us</a></li>
+                                            <li class="footer-links__item"><a href="contact-us.html" class="footer-links__link">Contact Us</a></li>
+                                            <li class="footer-links__item"><a href="faq.html" class="footer-links__link">FAQ</a></li>
+                                            <li class="footer-links__item"><a href="blog.html" class="footer-links__link">Blogs</a></li>
+                                            <li class="footer-links__item"><a href="user-manuals.html" class="footer-links__link">User Manuals</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1716,23 +1699,22 @@
                                         <ul class="footer-contacts__contacts">
                                             <li class="text-white"> 
                                                 <a href="https://goo.gl/maps/pVpPKz8JFhMJ4znc7">
-                                                 <i class="footer-contacts__icon fas fa-globe-americas"></i>
-                                                  C 159, Naraina Industrial Area, Phase I, Naraina, Delhi 110027
+                                                    <i class="footer-contacts__icon fas fa-globe-americas"></i>
+                                                    C 159, Naraina Industrial Area, Phase I, Naraina, Delhi 110027
                                                 </a>
                                             </li>
                                             <li class="text-white">
                                                 <a href="mailto:amol@36spares.com">
                                                 <i class="footer-contacts__icon far fa-envelope"></i>
-                                                 amol@36spares.com
+                                                    amol@36spares.com
                                                 </a>
                                             </li>
                                             <li class="text-white">
                                                 <a href="tel:+91 78400 82310">
                                                 <i class="footer-contacts__icon fas fa-mobile-alt"></i>
-                                                 +91 78400 82310
+                                                    +91 78400 82310
                                                 </a>
                                             </li>
-                                            <!-- <li class="text-white"><i class="footer-contacts__icon far fa-clock"></i> Mon-Sat 10:00pm - 7:00pm</li> -->
                                         </ul>
                                     </div>
                                     </div>
@@ -1814,6 +1796,7 @@
             </div>
         </footer>
         <!-- site__footer / end -->
+
     </div>
     <!-- site / end -->
     <!-- quickview-modal -->
@@ -1823,8 +1806,46 @@
         </div>
     </div>
     <!-- quickview-modal / end -->
-    <!-- mobilemenu -->
-    <div class="mobilemenu">
+
+    <!-- photoswipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>-->
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- photoswipe / end -->
+
+     <!-- mobilemenu -->
+     <div class="mobilemenu">
         <div class="mobilemenu__backdrop"></div>
         <div class="mobilemenu__body">
             <div class="mobilemenu__header">
@@ -1900,106 +1921,106 @@
                             <ul class="mobile-links mobile-links--level--1">
                                 <li class="mobile-links__item" data-collapse-item>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">ACE</a>
+                                        <a href="shop.html" class="mobile-links__item-link">ACE</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link"> Ajax Fiori</a>
+                                        <a href="shop.html" class="mobile-links__item-link"> Ajax Fiori</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Ashok Leyland</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Ashok Leyland</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link"> Atlas Copco</a>
+                                        <a href="shop.html" class="mobile-links__item-link"> Atlas Copco</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">BEML</a>
+                                        <a href="shop.html" class="mobile-links__item-link">BEML</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Bobcat</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Bobcat</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Case</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Case</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Cat</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Cat</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Cosben</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Cosben</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link"> Crompton Greaves</a>
+                                        <a href="shop.html" class="mobile-links__item-link"> Crompton Greaves</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Doosan</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Doosan</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Euro Shatal</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Euro Shatal</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Gomaco</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Gomaco</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Havells</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Havells</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Husqvurna</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Husqvurna</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">JCB</a>
+                                        <a href="shop.html" class="mobile-links__item-link">JCB</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Kirloskar</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Kirloskar</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Komatsu</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Komatsu</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Liugong</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Liugong</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Mahindra</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Mahindra</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Metso</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Metso</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Puzzolana</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Puzzolana</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Rexroth</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Rexroth</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Scania</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Scania</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link"> Schwing Stetter</a>
+                                        <a href="shop.html" class="mobile-links__item-link"> Schwing Stetter</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Siemens</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Siemens</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Sigma</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Sigma</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link"> Tata Hitachi</a>
+                                        <a href="shop.html" class="mobile-links__item-link"> Tata Hitachi</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Terex</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Terex</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Volvo</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Volvo</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">WAM</a>
+                                        <a href="shop.html" class="mobile-links__item-link">WAM</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link"> Wacker Neuson</a>
+                                        <a href="shop.html" class="mobile-links__item-link"> Wacker Neuson</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">Wuerth</a>
+                                        <a href="shop.html" class="mobile-links__item-link">Wuerth</a>
                                     </div>
                                     <div class="mobile-links__item-title">
-                                        <a href="#" class="mobile-links__item-link">XCMG</a>
+                                        <a href="shop.html" class="mobile-links__item-link">XCMG</a>
                                     </div>
                                 </li>
                             </ul>
@@ -2007,75 +2028,137 @@
                     </li>
                     <li class="mobile-links__item" data-collapse-item>
                         <div class="mobile-links__item-title">
-                            <a href="#" class="mobile-links__item-link">ABout Us</a>
+                            <a href="about-us.html" class="mobile-links__item-link">ABout Us</a>
                         </div>
                     </li>
                     <li class="mobile-links__item" data-collapse-item>
                         <div class="mobile-links__item-title">
-                            <a href="#" class="mobile-links__item-link">Contacts</a>
+                            <a href="contact-us.html" class="mobile-links__item-link">Contacts</a>
                         </div>
                     </li>
                     <li class="mobile-links__item" data-collapse-item>
                         <div class="mobile-links__item-title">
-                            <a href="#" class="mobile-links__item-link">FAQ</a>
+                            <a href="faq.html" class="mobile-links__item-link">FAQ</a>
                         </div>
                     </li>
                     <li class="mobile-links__item" data-collapse-item>
                         <div class="mobile-links__item-title">
-                            <a href="#" class="mobile-links__item-link">Blog</a>
+                            <a href="blog.html" class="mobile-links__item-link">Blog</a>
                         </div>
                     </li>
                     <li class="mobile-links__item" data-collapse-item>
                         <div class="mobile-links__item-title">
-                            <a href="#" class="mobile-links__item-link">Partner Now</a>
+                            <a href="#partnerNowModal" class="mobile-links__item-link" data-toggle="modal" data-target="#partnerNowModal">Partner Now</a>
                         </div>
                     </li>
                     <li class="mobile-links__item" data-collapse-item>
                         <div class="mobile-links__item-title">
-                            <a href="#" class="mobile-links__item-link">Give Requirements</a>
+                            <a href="#giveModal" class="mobile-links__item-link" data-toggle="modal" data-target="#giveModal">Give Requirements</a>
                         </div>
+                    </li>
+                    <li class="mobile-links__item" data-collapse-item>
+                        <div class="mobile-links__item-title align-items-center">
+                            <a href="account-login.html" class="indicator__button  btn btn-primary btn-forsed w-100">
+                                <span class="indicator__area">
+                                    <svg width="20px" height="20px">
+                                        <use xlink:href="images/sprite.svg#person-20"></use>
+                                    </svg>
+                                    <span class="ml-2">Login</span>
+                                </span>
+                            </a>
+                        </div>
+
+                    
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <!-- mobilemenu / end -->
-    <!-- photoswipe -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>-->
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
+
+    <!-- partnerNow-modal -->
+    <div id="partnerNowModal" class="modal fade p-0" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="partnerNowModalLabel">Become a 36Spares Partner</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body pt-0">
+                    
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control styled-input" id="partner-name" placeholder="Enter your name*">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control styled-input" id="partner-number" placeholder="Enter your number*">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control styled-input" id="partner-number" placeholder="Enter your email*">
+                      </div>
+                      <div class="form-group">
+                        <input type="number" class="form-control styled-input" id="partner-pin" placeholder="Enter your pincode*">
+                      </div>
+                      <div class="text-right">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Request Call</button>
                     </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
+                    </form>
+                  </div>
             </div>
         </div>
     </div>
-    <!-- photoswipe / end -->
+    <!-- partnerNow-modal / end -->
+
+    <!-- Give Requerment Modal -->
+    <div id="giveModal" class="modal fade p-0" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="giveModalLabel">Give Requirements</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body pt-0">
+                    
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control styled-input" id="give-name" placeholder="Enter your name*">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control styled-input" id="give-number" placeholder="Enter your number*">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control styled-input" id="give-number" placeholder="Enter your email*">
+                      </div>
+                      
+                    <div class="form-group">
+                        <label for="give-description">Description*</label>
+                        <textarea class="form-control styled-input" id="give-description" rows="3"></textarea>
+                      </div>
+
+                      <div class="custom-upload">
+                        <input type="file" name="upload" id="upload" accept=".pdf,image/png, image/jpeg">
+                        <div class="">
+                            <p class="m-0">Upload Files</p>
+                            <p style="font-size: 10px; margin:0 ;">Supported format PNG, JPEG, PDF</p>
+                        </div>
+                        <img src="images/icons/upload.svg" alt="Upload" class="mr-2">
+                      </div>
+
+                      <div class="text-right mt-3">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Request Call</button>
+                    </div>
+
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Give Requerment Modal / end -->
+
     <!-- js -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
