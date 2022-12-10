@@ -21,13 +21,21 @@
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
     <!-- font - stroyka -->
     <link rel="stylesheet" href="fonts/stroyka/stroyka.css">
+
+    <style>
+        @media (min-width: 768px) {
+            .cart-table__column--product {
+                min-width: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!-- site -->
     <div class="site">
 
-        
+
         <!-- mobile site__header -->
         <header class="site__header d-lg-none">
             <!-- data-sticky-mode - one of [pullToShow, alwaysOnTop] -->
@@ -106,7 +114,7 @@
                                 <a class="topbar-link" href="contact-us.html">Contacts</a>
                             </div>
                             <div class="topbar__item topbar__item--link">
-                               <a class="topbar-link" href="faq.html">FAQ </a>
+                                <a class="topbar-link" href="faq.html">FAQ </a>
                             </div>
                             <div class="topbar__item topbar__item--link">
                                 <a class="topbar-link" href="blog.html">Blog</a>
@@ -136,7 +144,7 @@
                                 <div class="nav-panel__logo">
                                     <a href="index.html">
                                         <!-- logo -->
-                                       <img src="images/logo.png" alt="Logo" class="main-logo">
+                                        <img src="images/logo.png" alt="Logo" class="main-logo">
                                         <!-- logo / end -->
                                     </a>
                                 </div>
@@ -161,7 +169,7 @@
                                                             <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
                                                             <div class="menu__item-submenu-offset"></div>
                                                             <a class="menu__item-link" href="shop.html">
-                                                                Utility Equipment 
+                                                                Utility Equipment
                                                             </a>
                                                         </li>
                                                         <li class="menu__item">
@@ -175,7 +183,7 @@
                                                             <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
                                                             <div class="menu__item-submenu-offset"></div>
                                                             <a class="menu__item-link" href="shop.html">
-                                                              Road Equipment
+                                                                Road Equipment
                                                             </a>
                                                         </li>
                                                         <li class="menu__item">
@@ -189,7 +197,7 @@
                                                             <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
                                                             <div class="menu__item-submenu-offset"></div>
                                                             <a class="menu__item-link" href="shop.html">
-                                                                Mining Equipment 
+                                                                Mining Equipment
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -376,7 +384,7 @@
                                                             <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
                                                             <div class="menu__item-submenu-offset"></div>
                                                             <a class="menu__item-link" href="#">
-                                                              Scania
+                                                                Scania
                                                             </a>
                                                         </li>
                                                         <li class="menu__item">
@@ -449,7 +457,7 @@
                                                                 XCMG
                                                             </a>
                                                         </li>
-                                                       
+
                                                     </ul>
                                                 </div>
                                                 <!-- .menu / end -->
@@ -478,7 +486,7 @@
 
 
                                 <div class="nav-panel__indicators align-items-center">
-                                   
+
                                     <div class="indicator indicator--trigger--click">
                                         <a href="cart.html" class="indicator__button btn btn-primary btn-forsed radious-50">
                                             <span class="indicator__area px-4">
@@ -626,352 +634,545 @@
                             </ol>
                         </nav>
                     </div>
-                    <div class="page-header__title">
-                        <h1>Shopping Cart</h1>
-                    </div>
+
                 </div>
             </div>
-            <div class="cart block">
+
+            <div class="cart bolck">
                 <div class="container-xxl">
-                    <table class="cart__table cart-table">
-                        <thead class="cart-table__head">
-                            <tr class="cart-table__row">
-                                <th class="cart-table__column cart-table__column--image">Image</th>
-                                <th class="cart-table__column cart-table__column--product">Product</th>
-                                <th class="cart-table__column cart-table__column--price">Price</th>
-                                <th class="cart-table__column cart-table__column--quantity">Quantity</th>
-                                <th class="cart-table__column cart-table__column--total">Total</th>
-                                <th class="cart-table__column cart-table__column--remove"></th>
-                            </tr>
-                        </thead>
-                        <tbody class="cart-table__body">
-                            <tr class="cart-table__row">
-                                <td class="cart-table__column cart-table__column--image">
-                                    <div class="product-image">
-                                        <a href="product.html" class="product-image__body">
-                                            <img class="product-image__img" src="images/products/product-jcb.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--product">
-                                    <a href="product.html" class="cart-table__product-name">Poker Vibrator</a>
-                                    <ul class="cart-table__options">
-                                        <li class="product-brand">Brand: Euro Shatal</li>
-                                        <li>Model No1: VAF-60LT 5MT</li>
-                                        <li>Model No2</li>
-                                        <li>Model No3</li>
-                                    </ul>
-                                </td>
-                                <td class="cart-table__column cart-table__column--price" data-title="Price">₹699.00</td>
-                                <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
-                                    <div class="input-number">
-                                        <input class="form-control input-number__input" type="number" min="1" value="2">
-                                        <div class="input-number__add"></div>
-                                        <div class="input-number__sub"></div>
-                                    </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--total" data-title="Total">₹1,398.00</td>
-                                <td class="cart-table__column cart-table__column--remove">
-                                    <button type="button" class="btn btn-light btn-sm btn-svg-icon" title="Remove">
-                                        <svg width="12px" height="12px">
-                                            <use xlink:href="images/sprite.svg#cross-12"></use>
-                                        </svg>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr class="cart-table__row">
-                                <td class="cart-table__column cart-table__column--image">
-                                    <div class="product-image">
-                                        <a href="" class="product-image__body">
-                                            <img class="product-image__img" src="images/products/product-jcb.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--product">
-                                    <a href="" class="cart-table__product-name">Poker Vibrator</a>
-                                </td>
-                                <td class="cart-table__column cart-table__column--price" data-title="Price">₹849.00</td>
-                                <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
-                                    <div class="input-number">
-                                        <input class="form-control input-number__input" type="number" min="1" value="1">
-                                        <div class="input-number__add"></div>
-                                        <div class="input-number__sub"></div>
-                                    </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--total" data-title="Total">₹849.00</td>
-                                <td class="cart-table__column cart-table__column--remove">
-                                    <button type="button" class="btn btn-light btn-sm btn-svg-icon" title="Remove">
-                                        <svg width="12px" height="12px">
-                                            <use xlink:href="images/sprite.svg#cross-12"></use>
-                                        </svg>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr class="cart-table__row">
-                                <td class="cart-table__column cart-table__column--image">
-                                    <div class="product-image">
-                                        <a href="" class="product-image__body">
-                                            <img class="product-image__img" src="images/products/product-jcb.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--product">
-                                    <a href="" class="cart-table__product-name">Brandix Router Power Tool </a>
-                                    <ul class="cart-table__options">
-                                        <li>Color: True Red</li>
-                                    </ul>
-                                </td>
-                                <td class="cart-table__column cart-table__column--price" data-title="Price">₹1,210.00</td>
-                                <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
-                                    <div class="input-number">
-                                        <input class="form-control input-number__input" type="number" min="1" value="3">
-                                        <div class="input-number__add"></div>
-                                        <div class="input-number__sub"></div>
-                                    </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--total" data-title="Total">₹3,630.00</td>
-                                <td class="cart-table__column cart-table__column--remove">
-                                    <button type="button" class="btn btn-light btn-sm btn-svg-icon">
-                                        <svg width="12px" height="12px">
-                                            <use xlink:href="images/sprite.svg#cross-12"></use>
-                                        </svg>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="cart__actions justify-content-end">
-                        <div class="cart__buttons">
-                            <a href="shop.html" class="btn btn-primary">Continue Shopping</a>
-                            <!-- <a href="" class="btn btn-primary cart__update-button">Update Cart</a> -->
-                        </div>
+                    <div class="page-header__title mb-3">
+                        <h1>Quote Cart</h1>
                     </div>
-                    <div class="row justify-content-end pt-5">
-                        <div class="col-12 col-md-7 col-lg-6 col-xl-5">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Cart Totals</h3>
-                                    <table class="cart__totals">
-                                        <thead class="cart__totals-header">
-                                            <tr>
-                                                <th>Subtotal</th>
-                                                <td>₹5,877.00</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="cart__totals-body">
-                                            <tr>
-                                                <th>Shipping</th>
-                                                <td>
-                                                    ₹25.00
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>Tax</th>
-                                                <td>
-                                                    ₹0.00
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="pr-0 pt-3">
-                                                    <form class="cart__coupon-form w-100">
-                                                    <label for="input-coupon-code" class="sr-only">Password</label>
-                                                    <input type="text" class="form-control" id="input-coupon-code" placeholder="Coupon Code">
-                                                    <button type="submit" class="btn btn-primary">Apply Coupon</button>
-                                                </form>
-                                            </td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot class="cart__totals-footer">
-                                            <tr>
-                                                <th>Total</th>
-                                                <td>₹5,902.00</td>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                    <a class="btn btn-primary btn-xl btn-block cart__checkout-button" href="checkout.html">Proceed to checkout</a>
+                    <div class="row">
+                        <div class="col-lg-8 table-responsive">
+                            <table class="cart__table cart-table">
+                                <thead class="cart-table__head">
+                                    <tr class="cart-table__row">
+                                        <th class="cart-table__column cart-table__column--image">Image</th>
+                                        <th class="cart-table__column cart-table__column--product">Product</th>
+
+                                        <th class="cart-table__column cart-table__column--quantity">Quantity</th>
+
+                                        <th class="cart-table__column cart-table__column--remove"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="cart-table__body">
+                                    <tr class="cart-table__row">
+                                        <td class="cart-table__column cart-table__column--image">
+                                            <div class="product-image">
+                                                <a href="product.html" class="product-image__body">
+                                                    <img class="product-image__img" src="images/products/product-jcb.jpg" alt="Product Image">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--product">
+                                            <a href="product.html" class="cart-table__product-name">Poker Vibrator</a>
+                                            <ul class="cart-table__options">
+                                                <li class="product-brand">Brand: Euro Shatal</li>
+                                                <li>Model No1: VAF-60LT 5MT</li>
+                                                <li>Model No2</li>
+                                                <li>Model No3</li>
+                                            </ul>
+                                        </td>
+
+                                        <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
+                                            <div class="input-number">
+                                                <input class="form-control input-number__input" type="number" min="1" value="2">
+                                                <div class="input-number__add"></div>
+                                                <div class="input-number__sub"></div>
+                                            </div>
+                                        </td>
+
+                                        <td class="cart-table__column cart-table__column--remove">
+                                            <button type="button" class="btn btn-light btn-sm btn-svg-icon" title="Remove">
+                                                <svg width="12px" height="12px">
+                                                    <use xlink:href="images/sprite.svg#cross-12"></use>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart-table__row">
+                                        <td class="cart-table__column cart-table__column--image">
+                                            <div class="product-image">
+                                                <a href="product.html" class="product-image__body">
+                                                    <img class="product-image__img" src="images/products/product-jcb.jpg" alt="Product Image">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--product">
+                                            <a href="product.html" class="cart-table__product-name">Poker Vibrator</a>
+                                            <ul class="cart-table__options">
+                                                <li class="product-brand">Brand: Euro Shatal</li>
+                                                <li>Model No1: VAF-60LT 5MT</li>
+                                                <li>Model No2</li>
+                                                <li>Model No3</li>
+                                            </ul>
+                                        </td>
+
+                                        <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
+                                            <div class="input-number">
+                                                <input class="form-control input-number__input" type="number" min="1" value="2">
+                                                <div class="input-number__add"></div>
+                                                <div class="input-number__sub"></div>
+                                            </div>
+                                        </td>
+
+                                        <td class="cart-table__column cart-table__column--remove">
+                                            <button type="button" class="btn btn-light btn-sm btn-svg-icon" title="Remove">
+                                                <svg width="12px" height="12px">
+                                                    <use xlink:href="images/sprite.svg#cross-12"></use>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart-table__row">
+                                        <td class="cart-table__column cart-table__column--image">
+                                            <div class="product-image">
+                                                <a href="product.html" class="product-image__body">
+                                                    <img class="product-image__img" src="images/products/product-jcb.jpg" alt="Product Image">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--product">
+                                            <a href="product.html" class="cart-table__product-name">Poker Vibrator</a>
+                                            <ul class="cart-table__options">
+                                                <li class="product-brand">Brand: Euro Shatal</li>
+                                                <li>Model No1: VAF-60LT 5MT</li>
+                                                <li>Model No2</li>
+                                                <li>Model No3</li>
+                                            </ul>
+                                        </td>
+
+                                        <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
+                                            <div class="input-number">
+                                                <input class="form-control input-number__input" type="number" min="1" value="2">
+                                                <div class="input-number__add"></div>
+                                                <div class="input-number__sub"></div>
+                                            </div>
+                                        </td>
+
+                                        <td class="cart-table__column cart-table__column--remove">
+                                            <button type="button" class="btn btn-light btn-sm btn-svg-icon" title="Remove">
+                                                <svg width="12px" height="12px">
+                                                    <use xlink:href="images/sprite.svg#cross-12"></use>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 d-flex align-items-end">
+                            <div class="row justify-content-end w-100">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Get quote</h3>
+                                            <!-- <table class="cart__totals">
+                                                <thead class="cart__totals-header">
+                                                    <tr>
+                                                        <th>Subtotal</th>
+                                                        <td>₹5,877.00</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="cart__totals-body">
+                                                    <tr>
+                                                        <th>Shipping</th>
+                                                        <td>
+                                                            ₹25.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Tax</th>
+                                                        <td>
+                                                            ₹0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="pr-0 pt-3">
+                                                            <form class="cart__coupon-form w-100">
+                                                                <label for="input-coupon-code" class="sr-only">Password</label>
+                                                                <input type="text" class="form-control" id="input-coupon-code" placeholder="Coupon Code">
+                                                                <button type="submit" class="btn btn-primary">Apply Coupon</button>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot class="cart__totals-footer">
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>₹5,902.00</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table> -->
+                                            <a class="btn btn-primary btn-xl btn-block cart__checkout-button" href="checkout.html">Get Quote</a>
+
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+
+            <div class="cart block mt-4">
+                <div class="container-xxl">
+                    <div class="page-header__title mb-3">
+                        <h1>Shopping Cart</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 table-responsive">
+                            <table class="cart__table cart-table">
+                                <thead class="cart-table__head">
+                                    <tr class="cart-table__row">
+                                        <th class="cart-table__column cart-table__column--image">Image</th>
+                                        <th class="cart-table__column cart-table__column--product">Product</th>
+                                        <th class="cart-table__column cart-table__column--price">Price</th>
+                                        <th class="cart-table__column cart-table__column--quantity">Quantity</th>
+                                        <th class="cart-table__column cart-table__column--total">Total</th>
+                                        <th class="cart-table__column cart-table__column--remove"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="cart-table__body">
+                                    <tr class="cart-table__row">
+                                        <td class="cart-table__column cart-table__column--image">
+                                            <div class="product-image">
+                                                <a href="product.html" class="product-image__body">
+                                                    <img class="product-image__img" src="images/products/product-jcb.jpg" alt="Product Image">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--product">
+                                            <a href="product.html" class="cart-table__product-name">Poker Vibrator</a>
+                                            <ul class="cart-table__options">
+                                                <li class="product-brand">Brand: Euro Shatal</li>
+                                                <li>Model No1: VAF-60LT 5MT</li>
+                                                <li>Model No2</li>
+                                                <li>Model No3</li>
+                                            </ul>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--price" data-title="Price">₹699.00</td>
+                                        <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
+                                            <div class="input-number">
+                                                <input class="form-control input-number__input" type="number" min="1" value="2">
+                                                <div class="input-number__add"></div>
+                                                <div class="input-number__sub"></div>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--total" data-title="Total">₹1,398.00</td>
+                                        <td class="cart-table__column cart-table__column--remove">
+                                            <button type="button" class="btn btn-light btn-sm btn-svg-icon" title="Remove">
+                                                <svg width="12px" height="12px">
+                                                    <use xlink:href="images/sprite.svg#cross-12"></use>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart-table__row">
+                                        <td class="cart-table__column cart-table__column--image">
+                                            <div class="product-image">
+                                                <a href="" class="product-image__body">
+                                                    <img class="product-image__img" src="images/products/product-jcb.jpg" alt="Product Image">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--product">
+                                            <a href="" class="cart-table__product-name">Poker Vibrator</a>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--price" data-title="Price">₹849.00</td>
+                                        <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
+                                            <div class="input-number">
+                                                <input class="form-control input-number__input" type="number" min="1" value="1">
+                                                <div class="input-number__add"></div>
+                                                <div class="input-number__sub"></div>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--total" data-title="Total">₹849.00</td>
+                                        <td class="cart-table__column cart-table__column--remove">
+                                            <button type="button" class="btn btn-light btn-sm btn-svg-icon" title="Remove">
+                                                <svg width="12px" height="12px">
+                                                    <use xlink:href="images/sprite.svg#cross-12"></use>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart-table__row">
+                                        <td class="cart-table__column cart-table__column--image">
+                                            <div class="product-image">
+                                                <a href="" class="product-image__body">
+                                                    <img class="product-image__img" src="images/products/product-jcb.jpg" alt="Product Image">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--product">
+                                            <a href="" class="cart-table__product-name">Brandix Router Power Tool </a>
+                                            <ul class="cart-table__options">
+                                                <li>Color: True Red</li>
+                                            </ul>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--price" data-title="Price">₹1,210.00</td>
+                                        <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
+                                            <div class="input-number">
+                                                <input class="form-control input-number__input" type="number" min="1" value="3">
+                                                <div class="input-number__add"></div>
+                                                <div class="input-number__sub"></div>
+                                            </div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--total" data-title="Total">₹3,630.00</td>
+                                        <td class="cart-table__column cart-table__column--remove">
+                                            <button type="button" class="btn btn-light btn-sm btn-svg-icon">
+                                                <svg width="12px" height="12px">
+                                                    <use xlink:href="images/sprite.svg#cross-12"></use>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row justify-content-end">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Cart Totals</h3>
+                                            <table class="cart__totals">
+                                                <thead class="cart__totals-header">
+                                                    <tr>
+                                                        <th>Subtotal</th>
+                                                        <td>₹5,877.00</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="cart__totals-body">
+                                                    <tr>
+                                                        <th>Shipping</th>
+                                                        <td>
+                                                            ₹25.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Tax</th>
+                                                        <td>
+                                                            ₹0.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="pr-0 pt-3">
+                                                            <form class="cart__coupon-form w-100">
+                                                                <label for="input-coupon-code" class="sr-only">Password</label>
+                                                                <input type="text" class="form-control" id="input-coupon-code" placeholder="Coupon Code">
+                                                                <button type="submit" class="btn btn-primary">Apply Coupon</button>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot class="cart__totals-footer">
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>₹5,902.00</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                            <a class="btn btn-primary btn-xl btn-block cart__checkout-button" href="checkout.html">Proceed to checkout</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="cart__actions ">
+                                        <div class="cart__buttons w-100 px-3">
+                                            <a href="shop.html" class="btn btn-primary w-100">Continue Shopping</a>
+                                            <!-- <a href="" class="btn btn-primary cart__update-button">Update Cart</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
         <!-- site__body / end -->
 
-                <!-- site__footer -->
-                <footer class="site__footer">
-                    <div class="site-footer">
-                        <div class="">
-                            <div class="site-footer__widgets  footer-grey">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-3 d-flex justify-content-center">
-                                            <div class="site-footer__widget footer-links">
-                                                <h5 class="footer-links__title">Policies</h5>
-                                                <ul class="footer-links__list">
-                                                    <li class="footer-links__item"><a href="privacy-policy.html" class="footer-links__link">Privacy Policy</a></li>
-                                                    <li class="footer-links__item"><a href="terms.html" class="footer-links__link">Terms & Conditions</a></li>
-                                                    <li class="footer-links__item"><a href="shipping-policy.html" class="footer-links__link">Shipping Policy</a></li>
-                                                    <li class="footer-links__item"><a href="return-policy.html" class="footer-links__link">Return Policy</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 d-flex justify-content-center">
-                                            <div class="site-footer__widget footer-links">
-                                                <h5 class="footer-links__title">Brands</h5>
-                                                <ul class="footer-links__list">
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Scania</a></li>
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Ashok Leyland</a></li>
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">WAM</a></li>
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Siemens</a></li>
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Havells</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 d-flex justify-content-center">
-                                            <div class="site-footer__widget footer-links">
-                                                <h5 class="footer-links__title">Categories</h5>
-                                                <ul class="footer-links__list">
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Utility Equipment</a></li>
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Earthmoving</a></li>
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Road Equipment</a></li>
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Concrete Equipment</a></li>
-                                                    <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Mining Equipment</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 d-flex justify-content-center">
-                                            <div class="site-footer__widget footer-links">
-                                                <h5 class="footer-links__title">Other Pages</h5>
-                                                <ul class="footer-links__list">
-                                                    <li class="footer-links__item"><a href="about-us.html" class="footer-links__link">About Us</a></li>
-                                                    <li class="footer-links__item"><a href="contact-us.html" class="footer-links__link">Contact Us</a></li>
-                                                    <li class="footer-links__item"><a href="faq.html" class="footer-links__link">FAQ</a></li>
-                                                    <li class="footer-links__item"><a href="blog.html" class="footer-links__link">Blogs</a></li>
-                                                    <li class="footer-links__item"><a href="user-manuals.html" class="footer-links__link">User Manuals</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+        <!-- site__footer -->
+        <footer class="site__footer">
+            <div class="site-footer">
+                <div class="">
+                    <div class="site-footer__widgets  footer-grey">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Policies</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item"><a href="privacy-policy.html" class="footer-links__link">Privacy Policy</a></li>
+                                            <li class="footer-links__item"><a href="terms.html" class="footer-links__link">Terms & Conditions</a></li>
+                                            <li class="footer-links__item"><a href="shipping-policy.html" class="footer-links__link">Shipping Policy</a></li>
+                                            <li class="footer-links__item"><a href="return-policy.html" class="footer-links__link">Return Policy</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-        
-                            <div class="footer-black">
-                                <div class="container py-5">
-                                    <div class="row">
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="site-footer__widget footer-contacts">
-                                                    <h5 class="footer-contacts__title">About Us</h5>
-                                                    <img src="images/logos/logo-yellow.svg" alt="Logo">
-                                                    <div class="footer-contacts__text text-white mt-2 pr-0">
-                                                        Online store for all Construction
-                                                        Industrial Equipments & Accessories
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4 mt-md-0 mt-5">
-                                                <div class="site-footer__widget footer-contacts">
-                                                <h5 class="footer-contacts__title">Contact Us</h5>
-                                                <ul class="footer-contacts__contacts">
-                                                    <li class="text-white"> 
-                                                        <a href="https://goo.gl/maps/pVpPKz8JFhMJ4znc7">
-                                                            <i class="footer-contacts__icon fas fa-globe-americas"></i>
-                                                            C 159, Naraina Industrial Area, Phase I, Naraina, Delhi 110027
-                                                        </a>
-                                                    </li>
-                                                    <li class="text-white">
-                                                        <a href="mailto:amol@36spares.com">
-                                                        <i class="footer-contacts__icon far fa-envelope"></i>
-                                                            amol@36spares.com
-                                                        </a>
-                                                    </li>
-                                                    <li class="text-white">
-                                                        <a href="tel:+91 78400 82310">
-                                                        <i class="footer-contacts__icon fas fa-mobile-alt"></i>
-                                                            +91 78400 82310
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            </div>
-        
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                            <div class="site-footer__widget footer-newsletter">
-                                            <h5 class="footer-newsletter__title">Newsletter</h5>
-                                            <div class="footer-newsletter__text text-white">
-                                                Subscribe for Special Offers & Discounts
-                                            </div>
-                                            <form action="" class="footer-newsletter__form">
-                                                <label class="sr-only" for="footer-newsletter-address">Email Address</label>
-                                                <input type="text" class="footer-newsletter__form-input form-control" id="footer-newsletter-address" placeholder="Email Address...">
-                                                <button class="footer-newsletter__form-button btn btn-primary">Subscribe</button>
-                                            </form>
-                                            <div class="footer-newsletter__text footer-newsletter__text--social text-white">
-                                                Follow us on social networks
-                                            </div>
-                                            <!-- social-links -->
-                                            <div class="social-links footer-newsletter__social-links social-links--shape--circle">
-                                                <ul class="social-links__list">
-                                                    <li class="social-links__item">
-                                                        <a class="social-links__link social-links__link--type--rss" href="" target="_blank">
-                                                            <i class="fas fa-rss"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="social-links__item">
-                                                        <a class="social-links__link social-links__link--type--youtube" href="" target="_blank">
-                                                            <i class="fab fa-youtube"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="social-links__item">
-                                                        <a class="social-links__link social-links__link--type--facebook" href="" target="_blank">
-                                                            <i class="fab fa-facebook-f"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="social-links__item">
-                                                        <a class="social-links__link social-links__link--type--twitter" href="" target="_blank">
-                                                            <i class="fab fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="social-links__item">
-                                                        <a class="social-links__link social-links__link--type--instagram" href="" target="_blank">
-                                                            <i class="fab fa-instagram"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- social-links / end -->
-                                        </div>
-                                        </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Brands</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Scania</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Ashok Leyland</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">WAM</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Siemens</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Havells</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-        
-                            <div class="site-footer__bottom footer-black">
-                                <div class="container">
-                                    <div class="site-footer__copyright text-center text-white-50">
-                                        <!-- copyright -->        
-                                        Copyright ©️ CONTEKNIK ENTERPRISE PRIVATE LIMITED.All rights reserved
-                                        <!-- copyright / end -->
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Categories</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Utility Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Earthmoving</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Road Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Concrete Equipment</a></li>
+                                            <li class="footer-links__item"><a href="shop.html" class="footer-links__link">Mining Equipment</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="totop">
-                            <div class="totop__body">
-                                <div class="totop__start"></div>
-                                <div class="totop__container container"></div>
-                                <div class="totop__end">
-                                    <button type="button" class="totop__button">
-                                        <svg width="13px" height="8px">
-                                            <use xlink:href="images/sprite.svg#arrow-rounded-up-13x8"></use>
-                                        </svg>
-                                    </button>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="site-footer__widget footer-links">
+                                        <h5 class="footer-links__title">Other Pages</h5>
+                                        <ul class="footer-links__list">
+                                            <li class="footer-links__item"><a href="about-us.html" class="footer-links__link">About Us</a></li>
+                                            <li class="footer-links__item"><a href="contact-us.html" class="footer-links__link">Contact Us</a></li>
+                                            <li class="footer-links__item"><a href="faq.html" class="footer-links__link">FAQ</a></li>
+                                            <li class="footer-links__item"><a href="blog.html" class="footer-links__link">Blogs</a></li>
+                                            <li class="footer-links__item"><a href="user-manuals.html" class="footer-links__link">User Manuals</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </footer>
-                <!-- site__footer / end -->
+
+                    <div class="footer-black">
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="site-footer__widget footer-contacts">
+                                        <h5 class="footer-contacts__title">About Us</h5>
+                                        <img src="images/logos/logo-yellow.svg" alt="Logo">
+                                        <div class="footer-contacts__text text-white mt-2 pr-0">
+                                            Online store for all Construction
+                                            Industrial Equipments & Accessories
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 mt-md-0 mt-5">
+                                    <div class="site-footer__widget footer-contacts">
+                                        <h5 class="footer-contacts__title">Contact Us</h5>
+                                        <ul class="footer-contacts__contacts">
+                                            <li class="text-white">
+                                                <a href="https://goo.gl/maps/pVpPKz8JFhMJ4znc7">
+                                                    <i class="footer-contacts__icon fas fa-globe-americas"></i>
+                                                    C 159, Naraina Industrial Area, Phase I, Naraina, Delhi 110027
+                                                </a>
+                                            </li>
+                                            <li class="text-white">
+                                                <a href="mailto:amol@36spares.com">
+                                                    <i class="footer-contacts__icon far fa-envelope"></i>
+                                                    amol@36spares.com
+                                                </a>
+                                            </li>
+                                            <li class="text-white">
+                                                <a href="tel:+91 78400 82310">
+                                                    <i class="footer-contacts__icon fas fa-mobile-alt"></i>
+                                                    +91 78400 82310
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="site-footer__widget footer-newsletter">
+                                        <h5 class="footer-newsletter__title">Newsletter</h5>
+                                        <div class="footer-newsletter__text text-white">
+                                            Subscribe for Special Offers & Discounts
+                                        </div>
+                                        <form action="" class="footer-newsletter__form">
+                                            <label class="sr-only" for="footer-newsletter-address">Email Address</label>
+                                            <input type="text" class="footer-newsletter__form-input form-control" id="footer-newsletter-address" placeholder="Email Address...">
+                                            <button class="footer-newsletter__form-button btn btn-primary">Subscribe</button>
+                                        </form>
+                                        <div class="footer-newsletter__text footer-newsletter__text--social text-white">
+                                            Follow us on social networks
+                                        </div>
+                                        <!-- social-links -->
+                                        <div class="social-links footer-newsletter__social-links social-links--shape--circle">
+                                            <ul class="social-links__list">
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--rss" href="" target="_blank">
+                                                        <i class="fas fa-rss"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--youtube" href="" target="_blank">
+                                                        <i class="fab fa-youtube"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--facebook" href="" target="_blank">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--twitter" href="" target="_blank">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="social-links__item">
+                                                    <a class="social-links__link social-links__link--type--instagram" href="" target="_blank">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- social-links / end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__bottom footer-black">
+                        <div class="container">
+                            <div class="site-footer__copyright text-center text-white-50">
+                                <!-- copyright -->
+                                Copyright ©️ CONTEKNIK ENTERPRISE PRIVATE LIMITED.All rights reserved
+                                <!-- copyright / end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="totop">
+                    <div class="totop__body">
+                        <div class="totop__start"></div>
+                        <div class="totop__container container"></div>
+                        <div class="totop__end">
+                            <button type="button" class="totop__button">
+                                <svg width="13px" height="8px">
+                                    <use xlink:href="images/sprite.svg#arrow-rounded-up-13x8"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- site__footer / end -->
 
     </div>
     <!-- site / end -->
@@ -1020,8 +1221,8 @@
     </div>
     <!-- photoswipe / end -->
 
-     <!-- mobilemenu -->
-     <div class="mobilemenu">
+    <!-- mobilemenu -->
+    <div class="mobilemenu">
         <div class="mobilemenu__backdrop"></div>
         <div class="mobilemenu__body">
             <div class="mobilemenu__header">
@@ -1078,7 +1279,7 @@
                                 </li>
                                 <li class="mobile-links__item" data-collapse-item>
                                     <div class="mobile-links__item-title">
-                                        <a href="shop.html" class="mobile-links__item-link">  Mining Equipment  </a>
+                                        <a href="shop.html" class="mobile-links__item-link"> Mining Equipment </a>
                                     </div>
                                 </li>
                             </ul>
@@ -1244,7 +1445,7 @@
                             </a>
                         </div>
 
-                    
+
                     </li>
                 </ul>
             </div>
@@ -1259,29 +1460,29 @@
                 <div class="modal-header border-0">
                     <h5 class="modal-title" id="partnerNowModalLabel">Become a 36Spares Partner</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true">&times;</span>
                     </button>
-                  </div>
-                  <div class="modal-body pt-0">
-                    
+                </div>
+                <div class="modal-body pt-0">
+
                     <form>
-                      <div class="form-group">
-                        <input type="text" class="form-control styled-input" id="partner-name" placeholder="Enter your name*">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control styled-input" id="partner-number" placeholder="Enter your number*">
-                      </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control styled-input" id="partner-number" placeholder="Enter your email*">
-                      </div>
-                      <div class="form-group">
-                        <input type="number" class="form-control styled-input" id="partner-pin" placeholder="Enter your pincode*">
-                      </div>
-                      <div class="text-right">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Request Call</button>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control styled-input" id="partner-name" placeholder="Enter your name*">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control styled-input" id="partner-number" placeholder="Enter your number*">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control styled-input" id="partner-number" placeholder="Enter your email*">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control styled-input" id="partner-pin" placeholder="Enter your pincode*">
+                        </div>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Request Call</button>
+                        </div>
                     </form>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1294,42 +1495,42 @@
                 <div class="modal-header border-0">
                     <h5 class="modal-title" id="giveModalLabel">Give Requirements</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true">&times;</span>
                     </button>
-                  </div>
-                  <div class="modal-body pt-0">
-                    
+                </div>
+                <div class="modal-body pt-0">
+
                     <form>
-                      <div class="form-group">
-                        <input type="text" class="form-control styled-input" id="give-name" placeholder="Enter your name*">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control styled-input" id="give-number" placeholder="Enter your number*">
-                      </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control styled-input" id="give-number" placeholder="Enter your email*">
-                      </div>
-                      
-                    <div class="form-group">
-                        <label for="give-description">Description*</label>
-                        <textarea class="form-control styled-input" id="give-description" rows="3"></textarea>
-                      </div>
-
-                      <div class="custom-upload">
-                        <input type="file" name="upload" id="upload" accept=".pdf,image/png, image/jpeg">
-                        <div class="">
-                            <p class="m-0">Upload Files</p>
-                            <p style="font-size: 10px; margin:0 ;">Supported format PNG, JPEG, PDF</p>
+                        <div class="form-group">
+                            <input type="text" class="form-control styled-input" id="give-name" placeholder="Enter your name*">
                         </div>
-                        <img src="images/icons/upload.svg" alt="Upload" class="mr-2">
-                      </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control styled-input" id="give-number" placeholder="Enter your number*">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control styled-input" id="give-number" placeholder="Enter your email*">
+                        </div>
 
-                      <div class="text-right mt-3">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Request Call</button>
-                    </div>
+                        <div class="form-group">
+                            <label for="give-description">Description*</label>
+                            <textarea class="form-control styled-input" id="give-description" rows="3"></textarea>
+                        </div>
+
+                        <div class="custom-upload">
+                            <input type="file" name="upload" id="upload" accept=".pdf,image/png, image/jpeg">
+                            <div class="">
+                                <p class="m-0">Upload Files</p>
+                                <p style="font-size: 10px; margin:0 ;">Supported format PNG, JPEG, PDF</p>
+                            </div>
+                            <img src="images/icons/upload.svg" alt="Upload" class="mr-2">
+                        </div>
+
+                        <div class="text-right mt-3">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Request Call</button>
+                        </div>
 
                     </form>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
